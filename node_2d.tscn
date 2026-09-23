@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://y3w3cpqi4vjn"]
+
+[ext_resource type="Script" uid="uid://jh0ltqx5locc" path="res://Main.cs" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://6f4irqjfgfuy" path="res://Sprite/SpearMan.png" id="2_epypp"]
+[ext_resource type="Script" uid="uid://dd3ch16qmjiex" path="res://Character.cs" id="3_0hol4"]
+[ext_resource type="Script" uid="uid://cd7q41ilpw8de" path="res://Spear.cs" id="4_0hol4"]
+[ext_resource type="Texture2D" uid="uid://18v3ta4c7x0n" path="res://Sprite/Spear.png" id="5_q6r6c"]
+[ext_resource type="Texture2D" uid="uid://dgb5co11k6ga5" path="res://Sprite/TrainingDummy.png" id="6_d21ai"]
+[ext_resource type="Script" uid="uid://djr0de0k0segg" path="res://Target.cs" id="6_rj586"]
+[ext_resource type="Texture2D" uid="uid://clv4qh1ksqlkb" path="res://Sprite/Doot.png" id="7_rj586"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
+radius = 63.007935
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_rj586"]
+b = Vector2(-0.7000122, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e07v4"]
+size = Vector2(140, 150)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q6r6c"]
+radius = 63.28507
+
+[node name="SpearMan" type="Node2D" unique_id=1295952428]
+script = ExtResource("1_wtcfe")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1713144544]
+position = Vector2(176, 256)
+script = ExtResource("3_0hol4")
+DashSpeed = 1000.0
+DashDuration = 0.2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=348134659]
+shape = SubResource("CircleShape2D_epypp")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=250662898]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_epypp")
+
+[node name="Spear" type="Area2D" parent="CharacterBody2D" unique_id=26863185]
+script = ExtResource("4_0hol4")
+ScaleDistance = 512.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Spear" unique_id=1755558877]
+position = Vector2(38, 59)
+scale = Vector2(0.11203705, 0.11203705)
+texture = ExtResource("5_q6r6c")
+
+[node name="CollisionSpear" type="CollisionShape2D" parent="CharacterBody2D/Spear" unique_id=890266578]
+position = Vector2(109, 53.65)
+rotation = -1.5707964
+scale = Vector2(0.5, 1)
+shape = SubResource("SegmentShape2D_rj586")
+debug_color = Color(0.96322614, 0, 0.50279427, 0.41960785)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1818948577]
+position = Vector2(176, 256)
+
+[node name="Wall" type="StaticBody2D" parent="." unique_id=1118983860]
+position = Vector2(140, 553)
+
+[node name="CollisionWall" type="CollisionShape2D" parent="Wall" unique_id=2123712991]
+shape = SubResource("RectangleShape2D_e07v4")
+debug_color = Color(0.9029617, 0.29863426, 0.2062599, 0.41960785)
+
+[node name="StaticTarget" type="Area2D" parent="." unique_id=2035339881 groups=["targets"]]
+position = Vector2(926, 118)
+script = ExtResource("6_rj586")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticTarget" unique_id=865559047]
+shape = SubResource("CircleShape2D_q6r6c")
+debug_color = Color(0.8217279, 0.40194255, 5.7756904e-07, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticTarget" unique_id=1879578998]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_d21ai")
+
+[node name="MovingTarget" type="Area2D" parent="." unique_id=148952924 groups=["targets"]]
+position = Vector2(930, 579)
+script = ExtResource("6_rj586")
+IsMoving = true
+MoveDistance = 500.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MovingTarget" unique_id=1847565569]
+shape = SubResource("CircleShape2D_q6r6c")
+debug_color = Color(0.8217279, 0.40194255, 5.7756904e-07, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="MovingTarget" unique_id=1150679155]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_rj586")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=541900735]
+
+[node name="SpeedLabel" type="Label" parent="CanvasLayer" unique_id=1834738165]
+anchors_preset = -1
+anchor_top = -0.0077160494
+anchor_right = 0.05428125
+anchor_bottom = -0.0077160494
+offset_left = 5.0
+offset_top = 8.0
+offset_right = 140.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.019607844, 0.7176471, 0.98039216, 1)
+theme_override_font_sizes/font_size = 32
+text = "Speed: 0"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="SpearSpeedLabel" type="Label" parent="CanvasLayer" unique_id=1011564350]
+anchors_preset = -1
+anchor_top = -0.0077160494
+anchor_right = 0.05428125
+anchor_bottom = -0.0077160494
+offset_left = 5.0
+offset_top = 44.0
+offset_right = 160.468
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(0.28583124, 0.7541436, 0.65178996, 1)
+theme_override_font_sizes/font_size = 32
+text = "SpearSpeed: 0"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="HitLabel" type="Label" parent="CanvasLayer" unique_id=179503121]
+anchors_preset = -1
+anchor_top = -0.0077160494
+anchor_right = 0.05428125
+anchor_bottom = -0.0077160494
+offset_left = 5.0
+offset_top = 77.0
+offset_right = 140.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(0.9270215, 0.5243932, 0.5941861, 1)
+theme_override_font_sizes/font_size = 32
+text = "Hits: 0"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
