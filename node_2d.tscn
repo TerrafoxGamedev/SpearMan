@@ -66,6 +66,7 @@ debug_color = Color(0.9029617, 0.29863426, 0.2062599, 0.41960785)
 [node name="StaticTarget" type="Area2D" parent="." unique_id=2035339881 groups=["targets"]]
 position = Vector2(926, 118)
 script = ExtResource("6_rj586")
+MaxHealth = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticTarget" unique_id=865559047]
 shape = SubResource("CircleShape2D_q6r6c")
@@ -74,6 +75,12 @@ debug_color = Color(0.8217279, 0.40194255, 5.7756904e-07, 0.41960785)
 [node name="Sprite2D" type="Sprite2D" parent="StaticTarget" unique_id=1879578998]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_d21ai")
+
+[node name="HealthBar" type="ProgressBar" parent="StaticTarget" unique_id=357307665]
+offset_left = -64.0
+offset_top = -95.0
+offset_right = 64.0
+offset_bottom = -68.0
 
 [node name="MovingTarget" type="Area2D" parent="." unique_id=148952924 groups=["targets"]]
 position = Vector2(930, 579)
@@ -88,6 +95,12 @@ debug_color = Color(0.8217279, 0.40194255, 5.7756904e-07, 0.41960785)
 [node name="Sprite2D" type="Sprite2D" parent="MovingTarget" unique_id=1150679155]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_rj586")
+
+[node name="HealthBar" type="ProgressBar" parent="MovingTarget" unique_id=451192331]
+offset_left = -64.0
+offset_top = -95.0
+offset_right = 64.0
+offset_bottom = -68.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=541900735]
 
