@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4xln1atdmbt7"
-path="res://.godot/imported/Apple.png-b2934a1c3bd512e2ebb2525ea5c5c314.ctex"
+uid="uid://q8crkkbsysr4"
+path="res://.godot/imported/Григоричка бегиит.png-2d5635c5b536b146a3f1092b56b99ef6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Items/Apple.png"
-dest_files=["res://.godot/imported/Apple.png-b2934a1c3bd512e2ebb2525ea5c5c314.ctex"]
+source_file="res://Sprites/Григорий/Григоричка бегиит.png"
+dest_files=["res://.godot/imported/Григоричка бегиит.png-2d5635c5b536b146a3f1092b56b99ef6.ctex"]
 
 [params]
 

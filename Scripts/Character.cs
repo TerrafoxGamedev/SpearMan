@@ -23,6 +23,7 @@ public partial class Character : CharacterBody2D
     private Label _speedLabel;                    // Спидометр
     private Spear _spear;                         // Копьё
     private AnimatedSprite2D _sprite;             // Теперь это AnimatedSprite2D, заменил "Sprite2D _sprite;" 
+    private InventoryUI _inventoryUI;             // Инвентарь
 
     public override void _Ready()
     {
@@ -31,7 +32,39 @@ public partial class Character : CharacterBody2D
         _camera = GetNode<Camera2D>("../Camera2D");
         _spear = GetNode<Spear>("Spear");
         _sprite = GetNode<AnimatedSprite2D>("Григорий");    // Теперь это AnimatedSprite2D, заменил "Sprite2D _sprite; на Григорий"
+        
+        _inventoryUI = GetNode<InventoryUI>("../InventoryLayer/InventoryUI");
+        _inventoryUI.Visible = false;
+
+        // Загружаем шаблон контейнера
+        var containerData = GD.Load<InventoryContainerData>(
+            "res://Data/Containers/backpack.tres");
+
+        // Создаём рантайм-контейнер
+        var inv = new InventoryContainer(containerData);
+
+        // Кладём туда тестовые предметы (пока просто для проверки)
+        var appleData = GD.Load<ItemData>("res://Data/Items/apple.tres");
+        var peasant_pitchforkData = GD.Load<ItemData>("res://Data/Items/peasant_pitchfork.tres");
+
+        inv.TryAddItem(new ItemInstance(appleData));
+        inv.TryAddItem(new ItemInstance(peasant_pitchforkData));
+
+        // Находим UI и связываем
+        _inventoryUI = GetNode<InventoryUI>("../InventoryLayer/InventoryUI");
+        _inventoryUI.Bind(inv, containerData.Icon);
+        _inventoryUI.Visible = false;
     }
+
+    public override void _Input(InputEvent @event)
+    {
+        if (@event.IsActionPressed("inventory"))
+        {
+            _inventoryUI.Visible = !_inventoryUI.Visible;
+            GetViewport().SetInputAsHandled();
+        }
+    }
+
     public override void _PhysicsProcess(double delta)
     {
         // Переменная, что бы каждый раз не писать (float)delta

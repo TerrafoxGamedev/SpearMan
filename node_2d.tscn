@@ -2,122 +2,116 @@
 
 [ext_resource type="Script" uid="uid://jh0ltqx5locc" path="res://Scripts/Main.cs" id="1_wtcfe"]
 [ext_resource type="Script" uid="uid://dd3ch16qmjiex" path="res://Scripts/Character.cs" id="3_0hol4"]
+[ext_resource type="Texture2D" uid="uid://q8crkkbsysr4" path="res://Sprites/Григорий/Григоричка бегиит.png" id="3_4d7sh"]
 [ext_resource type="Script" uid="uid://cd7q41ilpw8de" path="res://Scripts/Spear.cs" id="4_0hol4"]
 [ext_resource type="Texture2D" uid="uid://18v3ta4c7x0n" path="res://Sprites/Spear.png" id="5_q6r6c"]
-[ext_resource type="Texture2D" uid="uid://cmobb3jh66ps1" path="res://Sprites/Григорий/Григорий бигит.png" id="6_4d7sh"]
 [ext_resource type="Texture2D" uid="uid://dgb5co11k6ga5" path="res://Sprites/TrainingDummy.png" id="6_d21ai"]
 [ext_resource type="Script" uid="uid://djr0de0k0segg" path="res://Scripts/Target.cs" id="6_rj586"]
 [ext_resource type="Texture2D" uid="uid://clv4qh1ksqlkb" path="res://Sprites/Doot.png" id="7_rj586"]
+[ext_resource type="Script" uid="uid://cluw3btsegejx" path="res://Scripts/Inventory/InventoryUI.cs" id="9_4d7sh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
 radius = 63.007935
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(0, 0, 512, 512)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(512, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(0, 0, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(1024, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(220, 0, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(1536, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(440, 0, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(2048, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(660, 0, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nr8wp"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(2560, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(880, 0, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2bti"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(3072, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(0, 381, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ta5nu"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(3584, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(220, 381, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_flf07"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(4096, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(440, 381, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k73cj"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(4608, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(660, 381, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rjqkl"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(5120, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(880, 381, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fs4d3"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(5632, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(0, 762, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7vxoj"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(6144, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(220, 762, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ei405"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(6656, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(440, 762, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e8dv2"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(7168, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(660, 762, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2nhjh"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(7680, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(880, 762, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bjha6"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(8192, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(0, 1143, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gt76g"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(8704, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(220, 1143, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1fr6y"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(9216, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(440, 1143, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2hxjc"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(9728, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(660, 1143, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ebxd8"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(10240, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(880, 1143, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2u7jv"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(10752, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(0, 1524, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_24dk6"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(11264, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(220, 1524, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mryly"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(11776, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(440, 1524, 220, 381)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kq1c5"]
-atlas = ExtResource("6_4d7sh")
-region = Rect2(12288, 0, 512, 512)
+atlas = ExtResource("3_4d7sh")
+region = Rect2(660, 1524, 220, 381)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kvm3a"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4d7sh")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ir8iy")
 }, {
@@ -209,7 +203,7 @@ radius = 63.28507
 script = ExtResource("1_wtcfe")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1713144544]
-position = Vector2(176, 256)
+position = Vector2(800, 450)
 script = ExtResource("3_0hol4")
 DashSpeed = 1000.0
 DashDuration = 0.2
@@ -228,19 +222,19 @@ script = ExtResource("4_0hol4")
 ScaleDistance = 512.0
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Spear" unique_id=1755558877]
-position = Vector2(7, 23)
+position = Vector2(7, 46)
 scale = Vector2(0.11203705, 0.11203705)
 texture = ExtResource("5_q6r6c")
 
 [node name="CollisionSpear" type="CollisionShape2D" parent="CharacterBody2D/Spear" unique_id=890266578]
-position = Vector2(77, 17.000008)
+position = Vector2(77, 40)
 rotation = -1.5707964
 scale = Vector2(0.5, 1)
 shape = SubResource("SegmentShape2D_rj586")
 debug_color = Color(0.96322614, 0, 0.50279427, 0.41960785)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1818948577]
-position = Vector2(176, 256)
+position = Vector2(800, 450)
 
 [node name="Wall" type="StaticBody2D" parent="." unique_id=1118983860]
 position = Vector2(140, 553)
@@ -250,7 +244,7 @@ shape = SubResource("RectangleShape2D_e07v4")
 debug_color = Color(0.9029617, 0.29863426, 0.2062599, 0.41960785)
 
 [node name="StaticTarget" type="Area2D" parent="." unique_id=2035339881 groups=["targets"]]
-position = Vector2(926, 118)
+position = Vector2(1433, 153)
 script = ExtResource("6_rj586")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticTarget" unique_id=865559047]
@@ -266,9 +260,10 @@ offset_left = -64.0
 offset_top = -95.0
 offset_right = 64.0
 offset_bottom = -68.0
+metadata/_edit_use_anchors_ = true
 
 [node name="MovingTarget" type="Area2D" parent="." unique_id=148952924 groups=["targets"]]
-position = Vector2(930, 579)
+position = Vector2(1305, 700)
 script = ExtResource("6_rj586")
 IsMoving = true
 MoveDistance = 500.0
@@ -286,8 +281,10 @@ offset_left = -64.0
 offset_top = -95.0
 offset_right = 64.0
 offset_bottom = -68.0
+metadata/_edit_use_anchors_ = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=541900735]
+visible = false
 
 [node name="SpeedLabel" type="Label" parent="CanvasLayer" unique_id=1834738165]
 anchors_preset = -1
@@ -333,3 +330,13 @@ theme_override_font_sizes/font_size = 32
 text = "Hits: 0"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="InventoryLayer" type="CanvasLayer" parent="." unique_id=1049158044]
+
+[node name="InventoryUI" type="Control" parent="InventoryLayer" unique_id=1808160086]
+layout_mode = 3
+anchor_right = 0.4
+anchor_bottom = 0.5
+offset_right = -0.6000061
+offset_bottom = -0.1000061
+script = ExtResource("9_4d7sh")

@@ -25,24 +25,30 @@ public class InventoryContainer
                 continue;
 
             // Пробуем каждую клетку как левый-верхний угол 
-            // Сначала без поворота, потом, если не влезло, с поворотом
-            for (int x = 0; x < zone.Data.Size.X; x++)
-                for (int y = 0; y < zone.Data.Size.Y; y++)
+            // Проход 1: БЕЗ поворота — ищем везде
+            if (TryPlaceInZone(zone, item, rotated: false))
+                return true;
+
+            // Проход 2: С поворотом — только если разрешено
+            if (allowRotate && item.Data.Rotatable &&
+                TryPlaceInZone(zone, item, rotated: true))
+                return true;
+            }
+        return false;
+    }
+
+    private bool TryPlaceInZone(InventoryZone zone, ItemInstance item, bool rotated)
+    {
+        for (int x = 0; x < zone.Data.Size.X; x++)
+            for (int y = 0; y < zone.Data.Size.Y; y++)
+            {
+                var p = new Vector2I(x, y);
+                if (zone.CanPlace(item.Data, p, rotated))
                 {
-                    var p = new Vector2I(x, y);
-                    if (zone.CanPlace(item.Data, p, false))
-                    {
-                        zone.Place(item, p, false);
-                        return true;
-                    }
-                    if (allowRotate && item.Data.Rotatable &&
-                        zone.CanPlace(item.Data, p, true))
-                    {
-                        zone.Place(item, p, true);
-                        return true;
-                    }
+                    zone.Place(item, p, rotated);
+                    return true;
                 }
-        }
+            }
         return false;
     }
 }
