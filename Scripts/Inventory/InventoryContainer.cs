@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 public class InventoryContainer
 {
-    public InventoryContainerData Data;
-    public List<InventoryZone> Zones = new();
+    public InventoryContainerData Data;         // Ссылка на шаблон контейнера
+    public List<InventoryZone> Zones = new();   // Список всех зон контейнера
 
+    // Конструктор: cоздаём контейнер с нужными зонами
     public InventoryContainer(InventoryContainerData data)
     {
         Data = data;
@@ -13,15 +14,18 @@ public class InventoryContainer
             Zones.Add(new InventoryZone(z));
     }
 
-    // Универсальный поиск места под предмет
+    // Универсальный поиск места под предмет во всём контейнере
     public bool TryAddItem(ItemInstance item, bool allowRotate = true)
     {
+        // Идём по зонам в порядке добавления
         foreach (var zone in Zones)
         {
-            if (!string.IsNullOrEmpty(zone.Data.AllowedTag) &&
-                zone.Data.AllowedTag != item.Data.Tag)
+            // Фильтр по тегу
+            if (!zone.Data.Accepts(item.Data))
                 continue;
 
+            // Пробуем каждую клетку как левый-верхний угол 
+            // Сначала без поворота, потом, если не влезло, с поворотом
             for (int x = 0; x < zone.Data.Size.X; x++)
                 for (int y = 0; y < zone.Data.Size.Y; y++)
                 {

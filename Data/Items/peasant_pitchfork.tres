@@ -9,5 +9,5 @@ Id = "peasant_pitchfork"
 DisplayName = "Крестьянские Вилы"
 Icon = ExtResource("1_c7yud")
 Size = Vector2i(1, 5)
-Tag = "weapon"
+Tags = Array[String](["weapon"])
 metadata/_custom_type_script = "uid://bps8oeeokhi5p"

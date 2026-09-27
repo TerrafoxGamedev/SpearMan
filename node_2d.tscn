@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://y3w3cpqi4vjn"]
 
 [ext_resource type="Script" uid="uid://jh0ltqx5locc" path="res://Scripts/Main.cs" id="1_wtcfe"]
-[ext_resource type="Texture2D" uid="uid://6f4irqjfgfuy" path="res://Sprites/SpearMan.png" id="2_epypp"]
 [ext_resource type="Script" uid="uid://dd3ch16qmjiex" path="res://Scripts/Character.cs" id="3_0hol4"]
 [ext_resource type="Script" uid="uid://cd7q41ilpw8de" path="res://Scripts/Spear.cs" id="4_0hol4"]
 [ext_resource type="Texture2D" uid="uid://18v3ta4c7x0n" path="res://Sprites/Spear.png" id="5_q6r6c"]
@@ -197,8 +196,8 @@ animations = [{
 }]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_rj586"]
-a = Vector2(-4.700012, -2)
-b = Vector2(-0.7000122, 35)
+a = Vector2(-2, -3)
+b = Vector2(-2, 35.000015)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e07v4"]
 size = Vector2(140, 150)
@@ -234,7 +233,7 @@ scale = Vector2(0.11203705, 0.11203705)
 texture = ExtResource("5_q6r6c")
 
 [node name="CollisionSpear" type="CollisionShape2D" parent="CharacterBody2D/Spear" unique_id=890266578]
-position = Vector2(109, 53.65)
+position = Vector2(77, 17.000008)
 rotation = -1.5707964
 scale = Vector2(0.5, 1)
 shape = SubResource("SegmentShape2D_rj586")

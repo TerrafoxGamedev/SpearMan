@@ -8,6 +8,6 @@ script = ExtResource("1_vuoou")
 Id = "apple"
 DisplayName = "Яблоко"
 Icon = ExtResource("1_1x05v")
-Tag = "food"
+Tags = Array[String](["food"])
 Rotatable = false
 metadata/_custom_type_script = "uid://bps8oeeokhi5p"
