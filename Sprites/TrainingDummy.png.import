@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7oxq35nlhpqv"
-path="res://.godot/imported/Bedro L.png-2c7e1c3dd6bce437d60b3e755695e3d9.ctex"
+uid="uid://dgb5co11k6ga5"
+path="res://.godot/imported/TrainingDummy.png-9c7440ea34838f21b07ef79636cc4054.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Григорий/Слоёный Григорий/Bedro L.png"
-dest_files=["res://.godot/imported/Bedro L.png-2c7e1c3dd6bce437d60b3e755695e3d9.ctex"]
+source_file="res://Sprites/TrainingDummy.png"
+dest_files=["res://.godot/imported/TrainingDummy.png-9c7440ea34838f21b07ef79636cc4054.ctex"]
 
 [params]
 

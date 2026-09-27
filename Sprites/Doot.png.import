@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://18v3ta4c7x0n"
-path="res://.godot/imported/Spear.png-e539580c061db26498583795031b6758.ctex"
+uid="uid://clv4qh1ksqlkb"
+path="res://.godot/imported/Doot.png-578d60366ee7bf2b3ab36446e2ac88df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Spear.png"
-dest_files=["res://.godot/imported/Spear.png-e539580c061db26498583795031b6758.ctex"]
+source_file="res://Sprites/Doot.png"
+dest_files=["res://.godot/imported/Doot.png-578d60366ee7bf2b3ab36446e2ac88df.ctex"]
 
 [params]
 

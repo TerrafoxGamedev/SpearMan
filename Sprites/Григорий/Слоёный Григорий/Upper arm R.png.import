@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq0mtxw5wfqhn"
-path="res://.godot/imported/Bedro R.png-13987d010bcdc925756ec7da480accfb.ctex"
+uid="uid://cp4d7arnqqpxt"
+path="res://.godot/imported/Upper arm R.png-acd648ec2a0a5c7aa88b4c9f3d5372df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Григорий/Слоёный Григорий/Bedro R.png"
-dest_files=["res://.godot/imported/Bedro R.png-13987d010bcdc925756ec7da480accfb.ctex"]
+source_file="res://Sprites/Григорий/Слоёный Григорий/Upper arm R.png"
+dest_files=["res://.godot/imported/Upper arm R.png-acd648ec2a0a5c7aa88b4c9f3d5372df.ctex"]
 
 [params]
 

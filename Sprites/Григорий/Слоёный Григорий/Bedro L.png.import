@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8simhe6cir1f"
-path="res://.godot/imported/Head.png-508ae10f963d89d95f6b93efcbd7faaf.ctex"
+uid="uid://b7oxq35nlhpqv"
+path="res://.godot/imported/Bedro L.png-aa8c2b4127282112b5cf5e23ffd4e474.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Григорий/Слоёный Григорий/Head.png"
-dest_files=["res://.godot/imported/Head.png-508ae10f963d89d95f6b93efcbd7faaf.ctex"]
+source_file="res://Sprites/Григорий/Слоёный Григорий/Bedro L.png"
+dest_files=["res://.godot/imported/Bedro L.png-aa8c2b4127282112b5cf5e23ffd4e474.ctex"]
 
 [params]
 

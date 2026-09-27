@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clv4qh1ksqlkb"
-path="res://.godot/imported/Doot.png-273bbd629e3c86d86c0b5afedb7d846e.ctex"
+uid="uid://fsp1fvak0njv"
+path="res://.godot/imported/backpack.png-2b7509d89c2938f0c44e6a4cb05760e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/Doot.png"
-dest_files=["res://.godot/imported/Doot.png-273bbd629e3c86d86c0b5afedb7d846e.ctex"]
+source_file="res://Sprites/backpack.png"
+dest_files=["res://.godot/imported/backpack.png-2b7509d89c2938f0c44e6a4cb05760e9.ctex"]
 
 [params]
 

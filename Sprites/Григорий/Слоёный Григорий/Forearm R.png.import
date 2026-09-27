@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuh48k308n8af"
-path="res://.godot/imported/Upper arm L.png-e642f354b10ee474bcfd7562a37f6058.ctex"
+uid="uid://ctvsvnsv2x743"
+path="res://.godot/imported/Forearm R.png-36b7d5f2a78aa0e6c8841257faac80bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Григорий/Слоёный Григорий/Upper arm L.png"
-dest_files=["res://.godot/imported/Upper arm L.png-e642f354b10ee474bcfd7562a37f6058.ctex"]
+source_file="res://Sprites/Григорий/Слоёный Григорий/Forearm R.png"
+dest_files=["res://.godot/imported/Forearm R.png-36b7d5f2a78aa0e6c8841257faac80bb.ctex"]
 
 [params]
 

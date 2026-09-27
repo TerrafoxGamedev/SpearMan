@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://lxik235sho0f"]
+
+[ext_resource type="Script" uid="uid://bps8oeeokhi5p" path="res://Scripts/Inventory/Resources/ItemData.cs" id="1_36ehb"]
+[ext_resource type="Texture2D" uid="uid://bxvvta0owpv3h" path="res://Sprites/Items/Peasant_Pitchfork.png" id="1_c7yud"]
+
+[resource]
+script = ExtResource("1_36ehb")
+Id = "peasant_pitchfork"
+DisplayName = "Крестьянские Вилы"
+Icon = ExtResource("1_c7yud")
+Size = Vector2i(1, 5)
+Tag = "weapon"
+metadata/_custom_type_script = "uid://bps8oeeokhi5p"

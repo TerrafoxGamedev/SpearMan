@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://thyvehcfr21b"
-path="res://.godot/imported/Face.png-506bf399b00471205a0edcf5870b29d3.ctex"
+uid="uid://bxvvta0owpv3h"
+path="res://.godot/imported/Peasant_Pitchfork.png-7558ffc3de79ef6f3bb058602066bdbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Григорий/Слоёный Григорий/Face.png"
-dest_files=["res://.godot/imported/Face.png-506bf399b00471205a0edcf5870b29d3.ctex"]
+source_file="res://Sprites/Items/Peasant_Pitchfork.png"
+dest_files=["res://.godot/imported/Peasant_Pitchfork.png-7558ffc3de79ef6f3bb058602066bdbb.ctex"]
 
 [params]
 
