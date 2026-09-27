@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://dd3ch16qmjiex" path="res://Scripts/Character.cs" id="3_0hol4"]
 [ext_resource type="Script" uid="uid://cd7q41ilpw8de" path="res://Scripts/Spear.cs" id="4_0hol4"]
 [ext_resource type="Texture2D" uid="uid://18v3ta4c7x0n" path="res://Sprites/Spear.png" id="5_q6r6c"]
-[ext_resource type="Texture2D" uid="uid://cmobb3jh66ps1" path="res://Григорий/Григорий бигит.png" id="6_4d7sh"]
+[ext_resource type="Texture2D" uid="uid://cmobb3jh66ps1" path="res://Sprites/Григорий/Григорий бигит.png" id="6_4d7sh"]
 [ext_resource type="Texture2D" uid="uid://dgb5co11k6ga5" path="res://Sprites/TrainingDummy.png" id="6_d21ai"]
 [ext_resource type="Script" uid="uid://djr0de0k0segg" path="res://Scripts/Target.cs" id="6_rj586"]
 [ext_resource type="Texture2D" uid="uid://clv4qh1ksqlkb" path="res://Sprites/Doot.png" id="7_rj586"]
