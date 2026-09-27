@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://y3w3cpqi4vjn"]
 
-[ext_resource type="Script" uid="uid://jh0ltqx5locc" path="res://Main.cs" id="1_wtcfe"]
-[ext_resource type="Script" uid="uid://dd3ch16qmjiex" path="res://Character.cs" id="3_0hol4"]
-[ext_resource type="Script" uid="uid://cd7q41ilpw8de" path="res://Spear.cs" id="4_0hol4"]
-[ext_resource type="Texture2D" uid="uid://18v3ta4c7x0n" path="res://Sprite/Spear.png" id="5_q6r6c"]
+[ext_resource type="Script" uid="uid://jh0ltqx5locc" path="res://Scripts/Main.cs" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://6f4irqjfgfuy" path="res://Sprites/SpearMan.png" id="2_epypp"]
+[ext_resource type="Script" uid="uid://dd3ch16qmjiex" path="res://Scripts/Character.cs" id="3_0hol4"]
+[ext_resource type="Script" uid="uid://cd7q41ilpw8de" path="res://Scripts/Spear.cs" id="4_0hol4"]
+[ext_resource type="Texture2D" uid="uid://18v3ta4c7x0n" path="res://Sprites/Spear.png" id="5_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://cmobb3jh66ps1" path="res://Григорий/Григорий бигит.png" id="6_4d7sh"]
-[ext_resource type="Texture2D" uid="uid://dgb5co11k6ga5" path="res://Sprite/TrainingDummy.png" id="6_d21ai"]
-[ext_resource type="Script" uid="uid://djr0de0k0segg" path="res://Target.cs" id="6_rj586"]
-[ext_resource type="Texture2D" uid="uid://clv4qh1ksqlkb" path="res://Sprite/Doot.png" id="7_rj586"]
+[ext_resource type="Texture2D" uid="uid://dgb5co11k6ga5" path="res://Sprites/TrainingDummy.png" id="6_d21ai"]
+[ext_resource type="Script" uid="uid://djr0de0k0segg" path="res://Scripts/Target.cs" id="6_rj586"]
+[ext_resource type="Texture2D" uid="uid://clv4qh1ksqlkb" path="res://Sprites/Doot.png" id="7_rj586"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
 radius = 63.007935

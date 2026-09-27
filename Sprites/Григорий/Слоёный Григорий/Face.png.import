@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6f4irqjfgfuy"
-path="res://.godot/imported/SpearMan.png-5a34f2d99d04f43bd015919f542ee7ce.ctex"
+uid="uid://thyvehcfr21b"
+path="res://.godot/imported/Face.png-9edec499a0e47c88fde2bab7ea527df6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/SpearMan.png"
-dest_files=["res://.godot/imported/SpearMan.png-5a34f2d99d04f43bd015919f542ee7ce.ctex"]
+source_file="res://Sprites/Григорий/Слоёный Григорий/Face.png"
+dest_files=["res://.godot/imported/Face.png-9edec499a0e47c88fde2bab7ea527df6.ctex"]
 
 [params]
 

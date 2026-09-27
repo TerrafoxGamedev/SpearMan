@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp4d7arnqqpxt"
-path="res://.godot/imported/Upper arm R.png-2479aae43ecee3e101192597aac7980a.ctex"
+uid="uid://dsfgsx58wc765"
+path="res://.godot/imported/Apple.png-b2934a1c3bd512e2ebb2525ea5c5c314.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Григорий/Слоёный Григорий/Upper arm R.png"
-dest_files=["res://.godot/imported/Upper arm R.png-2479aae43ecee3e101192597aac7980a.ctex"]
+source_file="res://Sprites/Items/Apple.png"
+dest_files=["res://.godot/imported/Apple.png-b2934a1c3bd512e2ebb2525ea5c5c314.ctex"]
 
 [params]
 

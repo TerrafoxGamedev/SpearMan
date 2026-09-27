@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="InventoryContainerData" format=3 uid="uid://bx2l0rnvhs783"]
+
+[ext_resource type="Texture2D" uid="uid://fsp1fvak0njv" path="res://Sprites/backpack.png" id="1_mpv1x"]
+[ext_resource type="Script" uid="uid://bonx0ee53g5nq" path="res://Scripts/Inventory/Resources/InventoryZoneData.cs" id="2_jhsf1"]
+[ext_resource type="Script" uid="uid://dup7qq6xhicr8" path="res://Scripts/Inventory/Resources/InventoryContainerData.cs" id="3_xb1d5"]
+
+[sub_resource type="Resource" id="Resource_sdjnh"]
+script = ExtResource("2_jhsf1")
+metadata/_custom_type_script = "uid://bonx0ee53g5nq"
+
+[sub_resource type="Resource" id="Resource_gtamt"]
+script = ExtResource("2_jhsf1")
+ZoneName = "Side 1"
+Offset = Vector2i(5, 0)
+Size = Vector2i(2, 2)
+metadata/_custom_type_script = "uid://bonx0ee53g5nq"
+
+[sub_resource type="Resource" id="Resource_7ftoc"]
+script = ExtResource("2_jhsf1")
+ZoneName = "Side 2"
+Offset = Vector2i(-5, 0)
+Size = Vector2i(2, 2)
+AllowedTag = "potion"
+metadata/_custom_type_script = "uid://bonx0ee53g5nq"
+
+[resource]
+script = ExtResource("3_xb1d5")
+Icon = ExtResource("1_mpv1x")
+Zones = Array[ExtResource("2_jhsf1")]([SubResource("Resource_sdjnh"), SubResource("Resource_gtamt"), SubResource("Resource_7ftoc")])
+metadata/_custom_type_script = "uid://dup7qq6xhicr8"

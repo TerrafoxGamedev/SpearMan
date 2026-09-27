@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfowpn6kvx008"
-path="res://.godot/imported/Golen R.png-be751494e17ac194f50779000341e4a9.ctex"
+uid="uid://dmh2e11f2cet3"
+path="res://.godot/imported/Forearm L.png-b65587bc321834092ff3ad84d43ef68f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Григорий/Слоёный Григорий/Golen R.png"
-dest_files=["res://.godot/imported/Golen R.png-be751494e17ac194f50779000341e4a9.ctex"]
+source_file="res://Sprites/Григорий/Слоёный Григорий/Forearm L.png"
+dest_files=["res://.godot/imported/Forearm L.png-b65587bc321834092ff3ad84d43ef68f.ctex"]
 
 [params]
 
