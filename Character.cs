@@ -22,7 +22,7 @@ public partial class Character : CharacterBody2D
     private Camera2D _camera;                     // Камера
     private Label _speedLabel;                    // Спидометр
     private Spear _spear;                         // Копьё
-    private Sprite2D _sprite;
+    private AnimatedSprite2D _sprite;             // Теперь это AnimatedSprite2D, заменил "Sprite2D _sprite;" 
 
     public override void _Ready()
     {
@@ -30,7 +30,7 @@ public partial class Character : CharacterBody2D
         _speedLabel = GetNode<Label>("../CanvasLayer/SpeedLabel");
         _camera = GetNode<Camera2D>("../Camera2D");
         _spear = GetNode<Spear>("Spear");
-        _sprite = GetNode<Sprite2D>("Sprite2D");
+        _sprite = GetNode<AnimatedSprite2D>("Григорий");    // Теперь это AnimatedSprite2D, заменил "Sprite2D _sprite; на Григорий"
     }
     public override void _PhysicsProcess(double delta)
     {
@@ -98,6 +98,17 @@ public partial class Character : CharacterBody2D
             Vector2 targetVelocity = inputDirection * MaxSpeed;
             float rate = inputDirection != Vector2.Zero ? Acceleration : Deceleration;
             Velocity = Velocity.MoveToward(targetVelocity, rate * dt);
+
+            // Управление анимацией бега
+            if (Velocity.Length() > 10f) // Если персонаж движется
+            {
+                if (!_sprite.IsPlaying())
+                 _sprite.Play("run"); // Запускаем анимацию бега
+            }
+            else
+            {
+                _sprite.Stop(); // Если стоит — останавливаем
+            }
 
             // После дэша — сброс вращения
             _dashRotationProgress = 0f;
