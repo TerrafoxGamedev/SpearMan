@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8jn558835pat"
-path="res://.godot/imported/Apple.png-b2934a1c3bd512e2ebb2525ea5c5c314.ctex"
+uid="uid://cw35rsc37gpy3"
+path="res://.godot/imported/Travel_Pot.png-4aabc0337be1890d9ba47b2223fb592b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Items/Apple.png"
-dest_files=["res://.godot/imported/Apple.png-b2934a1c3bd512e2ebb2525ea5c5c314.ctex"]
+source_file="res://Sprites/Items/Travel_Pot.png"
+dest_files=["res://.godot/imported/Travel_Pot.png-4aabc0337be1890d9ba47b2223fb592b.ctex"]
 
 [params]
 

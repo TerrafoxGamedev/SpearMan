@@ -46,9 +46,12 @@ public partial class Character : CharacterBody2D
         // Кладём туда тестовые предметы (пока просто для проверки)
         var appleData = GD.Load<ItemData>("res://Data/Items/apple.tres");
         var peasant_pitchforkData = GD.Load<ItemData>("res://Data/Items/peasant_pitchfork.tres");
+        var travel_potData = GD.Load<ItemData>("res://Data/Items/travel_pot.tres");
 
         inv.TryAddItem(new ItemInstance(appleData));
+        inv.TryAddItem(new ItemInstance(appleData));
         inv.TryAddItem(new ItemInstance(peasant_pitchforkData));
+        inv.TryAddItem(new ItemInstance(travel_potData));
 
         // Находим UI и связываем
         _inventoryUI = GetNode<InventoryUI>("../InventoryLayer/InventoryUI");

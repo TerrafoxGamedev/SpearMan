@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bvddbrvru8slq"]
+
+[ext_resource type="Texture2D" uid="uid://cw35rsc37gpy3" path="res://Sprites/Items/Travel_Pot.png" id="1_f1f3p"]
+[ext_resource type="Script" uid="uid://bps8oeeokhi5p" path="res://Scripts/Inventory/Resources/ItemData.cs" id="1_r7x2d"]
+
+[resource]
+script = ExtResource("1_r7x2d")
+Id = "travel_pot"
+DisplayName = "Дорожный горшок"
+Icon = ExtResource("1_f1f3p")
+Size = Vector2i(2, 2)
+metadata/_custom_type_script = "uid://bps8oeeokhi5p"
