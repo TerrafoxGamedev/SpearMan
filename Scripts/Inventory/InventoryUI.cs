@@ -117,13 +117,10 @@ public partial class InventoryUI : Control
         Vector2I effSize = item.EffectiveSize;
         _dragOffsetInCells = new Vector2(effSize.X / 2f, effSize.Y / 2f);
 
-        /*// Считаем смещение курсора от левого-верхнего угла предмета
-        Vector2 cellF = (local - (Vector2)(zone.Data.Offset * CellSize)) / CellSize;
-        _dragOffsetInCells = cellF - (Vector2)item.Position;*/
-
         zone.Remove(item);   // Извлекаем предмет из зоны — теперь он «в воздухе»
 
         _dragging = item;
+        Input.MouseMode = Input.MouseModeEnum.Hidden;   // Скрыть курсор
         _lastMouseLocal = local;
         QueueRedraw();
     }
@@ -143,6 +140,7 @@ public partial class InventoryUI : Control
             {
                 zone.Place(_dragging, dropPos, _dragging.Rotated);
                 _dragging = null;
+                Input.MouseMode = Input.MouseModeEnum.Visible;   // Показать курсор
                 QueueRedraw();
                 return;
             }
@@ -158,6 +156,7 @@ public partial class InventoryUI : Control
 
         // Не получилось — возвращаем как было
         ReturnToSource();
+        Input.MouseMode = Input.MouseModeEnum.Visible;   // Показать курсор
         _dragging = null;
         QueueRedraw();
     }

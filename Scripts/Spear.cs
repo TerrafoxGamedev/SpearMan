@@ -27,6 +27,7 @@ public partial class Spear : Area2D
     private CharacterBody2D _ownerBody;
     private int _hitCount = 0;
     private bool _hasHitThisStrike = false;
+    public bool AttackEnabled = true;   // если false — копьё не начинает новый замах
 
     public override void _Ready()
     {
@@ -46,7 +47,7 @@ public partial class Spear : Area2D
         {
             case State.Idle:
                 // Просто висим, ждём ЛКМ
-                if (Input.IsActionPressed("attack"))
+                if (AttackEnabled && Input.IsActionPressed("attack"))
                     _state = State.Pulling;
                 break;
 

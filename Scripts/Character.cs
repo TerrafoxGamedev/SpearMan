@@ -29,11 +29,11 @@ public partial class Character : CharacterBody2D
     {
         // Находим узлы
         _speedLabel = GetNode<Label>("../CanvasLayer/SpeedLabel");
-        _camera = GetNode<Camera2D>("../Camera2D");
+        _camera = GetNode<Camera2D>("Camera2D");
         _spear = GetNode<Spear>("Spear");
         _sprite = GetNode<AnimatedSprite2D>("Григорий");    // Теперь это AnimatedSprite2D, заменил "Sprite2D _sprite; на Григорий"
         
-        _inventoryUI = GetNode<InventoryUI>("../InventoryLayer/InventoryUI");
+        _inventoryUI = GetNode<InventoryUI>("InventoryLayer/InventoryUI");
         _inventoryUI.Visible = false;
 
         // Загружаем шаблон контейнера
@@ -54,7 +54,7 @@ public partial class Character : CharacterBody2D
         inv.TryAddItem(new ItemInstance(travel_potData));
 
         // Находим UI и связываем
-        _inventoryUI = GetNode<InventoryUI>("../InventoryLayer/InventoryUI");
+        _inventoryUI = GetNode<InventoryUI>("InventoryLayer/InventoryUI");
         _inventoryUI.Bind(inv, containerData.Icon);
         _inventoryUI.Visible = false;
     }
@@ -64,6 +64,12 @@ public partial class Character : CharacterBody2D
         if (@event.IsActionPressed("inventory"))
         {
             _inventoryUI.Visible = !_inventoryUI.Visible;
+            
+            _spear.AttackEnabled = !_inventoryUI.Visible;  // Блокируем атаку, пока инвентарь открыт
+
+            if (!_inventoryUI.Visible)
+                Input.MouseMode = Input.MouseModeEnum.Visible;
+
             GetViewport().SetInputAsHandled();
         }
     }

@@ -202,39 +202,48 @@ radius = 63.28507
 [node name="SpearMan" type="Node2D" unique_id=1295952428]
 script = ExtResource("1_wtcfe")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1713144544]
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1713144544]
 position = Vector2(800, 450)
 script = ExtResource("3_0hol4")
 DashSpeed = 1000.0
 DashDuration = 0.2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=348134659]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=348134659]
 shape = SubResource("CircleShape2D_epypp")
 
-[node name="Григорий" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1710749907]
+[node name="Григорий" type="AnimatedSprite2D" parent="Player" unique_id=1710749907]
 scale = Vector2(0.421875, 0.421875)
 sprite_frames = SubResource("SpriteFrames_kvm3a")
 animation = &"run"
 frame_progress = 0.38718882
 
-[node name="Spear" type="Area2D" parent="CharacterBody2D" unique_id=26863185]
+[node name="Spear" type="Area2D" parent="Player" unique_id=26863185]
 script = ExtResource("4_0hol4")
 ScaleDistance = 512.0
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Spear" unique_id=1755558877]
+[node name="Sprite2D" type="Sprite2D" parent="Player/Spear" unique_id=1755558877]
 position = Vector2(7, 46)
 scale = Vector2(0.11203705, 0.11203705)
 texture = ExtResource("5_q6r6c")
 
-[node name="CollisionSpear" type="CollisionShape2D" parent="CharacterBody2D/Spear" unique_id=890266578]
+[node name="CollisionSpear" type="CollisionShape2D" parent="Player/Spear" unique_id=890266578]
 position = Vector2(77, 40)
 rotation = -1.5707964
 scale = Vector2(0.5, 1)
 shape = SubResource("SegmentShape2D_rj586")
 debug_color = Color(0.96322614, 0, 0.50279427, 0.41960785)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1818948577]
-position = Vector2(800, 450)
+[node name="InventoryLayer" type="CanvasLayer" parent="Player" unique_id=1049158044]
+
+[node name="InventoryUI" type="Control" parent="Player/InventoryLayer" unique_id=1808160086]
+layout_mode = 3
+anchor_right = 0.4
+anchor_bottom = 0.5
+offset_right = -0.6000061
+offset_bottom = -0.1000061
+script = ExtResource("9_4d7sh")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1818948577]
 
 [node name="Wall" type="StaticBody2D" parent="." unique_id=1118983860]
 position = Vector2(140, 553)
@@ -330,13 +339,3 @@ theme_override_font_sizes/font_size = 32
 text = "Hits: 0"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
-
-[node name="InventoryLayer" type="CanvasLayer" parent="." unique_id=1049158044]
-
-[node name="InventoryUI" type="Control" parent="InventoryLayer" unique_id=1808160086]
-layout_mode = 3
-anchor_right = 0.4
-anchor_bottom = 0.5
-offset_right = -0.6000061
-offset_bottom = -0.1000061
-script = ExtResource("9_4d7sh")
