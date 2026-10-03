@@ -9,5 +9,5 @@ Id = "apple"
 DisplayName = "Яблоко"
 Icon = ExtResource("1_1x05v")
 Tags = Array[String](["food"])
-Rotatable = false
+MaxStack = 12
 metadata/_custom_type_script = "uid://bps8oeeokhi5p"

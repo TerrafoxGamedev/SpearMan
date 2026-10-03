@@ -48,8 +48,9 @@ public partial class Character : CharacterBody2D
         var peasant_pitchforkData = GD.Load<ItemData>("res://Data/Items/peasant_pitchfork.tres");
         var travel_potData = GD.Load<ItemData>("res://Data/Items/travel_pot.tres");
 
-        inv.TryAddItem(new ItemInstance(appleData));
-        inv.TryAddItem(new ItemInstance(appleData));
+        for (int i = 0; i < 13; i++)
+            inv.TryAddItem(new ItemInstance(appleData));
+        
         inv.TryAddItem(new ItemInstance(peasant_pitchforkData));
         inv.TryAddItem(new ItemInstance(travel_potData));
 

@@ -29,6 +29,7 @@ project/assembly_name="SpearMan"
 [file_customization]
 
 folder_colors={
+"res://Data/": "gray",
 "res://Scripts/": "blue"
 }
 

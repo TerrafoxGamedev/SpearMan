@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://18v3ta4c7x0n" path="res://Sprites/Spear.png" id="5_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://dgb5co11k6ga5" path="res://Sprites/TrainingDummy.png" id="6_d21ai"]
 [ext_resource type="Script" uid="uid://djr0de0k0segg" path="res://Scripts/Target.cs" id="6_rj586"]
+[ext_resource type="FontFile" uid="uid://ci6fja1h6awu3" path="res://Fonts/Monocraft.otf" id="7_ir8iy"]
 [ext_resource type="Texture2D" uid="uid://clv4qh1ksqlkb" path="res://Sprites/Doot.png" id="7_rj586"]
 [ext_resource type="Script" uid="uid://cluw3btsegejx" path="res://Scripts/Inventory/InventoryUI.cs" id="9_4d7sh"]
 
@@ -242,6 +243,8 @@ anchor_bottom = 0.5
 offset_right = -0.6000061
 offset_bottom = -0.1000061
 script = ExtResource("9_4d7sh")
+StackLabelFont = ExtResource("7_ir8iy")
+StackLabelFontSize = 18
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1818948577]
 
