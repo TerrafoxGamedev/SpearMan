@@ -50,6 +50,13 @@ public partial class InventoryUI : Control
         public ItemInstance SwapTarget;   // Предмет, с которым можно обменяться (или null)
 	}
 
+    // Владелец инвентаря
+    private Node2D _ownerPlayer;            
+    public void SetOwnerPlayer(Node2D player)
+    {
+        _ownerPlayer = player;
+    }
+
 	public void Bind(InventoryContainer container, Texture2D backpackIcon = null)
     {
         _container = container;
@@ -69,17 +76,25 @@ public partial class InventoryUI : Control
 
     // ==================== ОБРАБОТКА ВВОДА ====================
 
+    public override void _Input(InputEvent @event)
+    {
+        if (_container == null) return;
+        if (_dragging == null) return;
+
+        if (@event is not InputEventMouseButton mb) return;
+        if (mb.ButtonIndex != MouseButton.Left || !mb.Pressed) return;
+
+        // Проверяем, что клик был вне нашего прямоугольника
+        Vector2 mouseGlobal = GetViewport().GetMousePosition();
+        if (GetGlobalRect().HasPoint(mouseGlobal)) return;
+
+        // Клик вне UI — выбрасываем
+        ThrowDraggedItemToWorld();
+    }
+    
     public override void _GuiInput(InputEvent @event)
     {
         if (_container == null) return;
-
-        // Движение мыши — обновляем позицию тащимого предмета
-        if (@event is InputEventMouseMotion mm)
-        {
-            _lastMouseLocal = mm.Position;
-            if (_dragging != null) QueueRedraw();
-            return;
-        }
 
         if (@event is not InputEventMouseButton mb)
             return;
@@ -90,16 +105,19 @@ public partial class InventoryUI : Control
             {
                 // Уже что-то тащим — кладём
                 TryDrop(mb.Position);
+                AcceptEvent();
             }
             else if (mb.ShiftPressed)
             {
                 // Shift+ЛКМ — берём 1 из стака
                 TryTakeOne(mb.Position);
+                AcceptEvent();
             }
             else
             {
                 // Обычный клик — берём весь стак
                 TryStartDrag(mb.Position);
+                AcceptEvent();
             }
         }
         else if (mb.ButtonIndex == MouseButton.Right && mb.Pressed)
@@ -123,6 +141,16 @@ public partial class InventoryUI : Control
                 // Ctrl+ПКМ по стаку — разделение
                 TrySplitStack(mb.Position);
             }
+        }
+    }
+
+    public override void _Process(double delta)
+    {
+        // Движение мыши — обновляем позицию тащимого предмета
+        if (_dragging != null)
+        {
+            _lastMouseLocal = GetLocalMousePosition();
+            QueueRedraw();
         }
     }
 
@@ -345,6 +373,29 @@ public partial class InventoryUI : Control
         // Если не получается — ищем место в контейнере
         if (!_container.TryAddItem(_dragging))
             GD.Print("Не удалось вернуть предмет!");
+    }
+
+    public void ThrowDraggedItemToWorld()
+    {
+        if (_dragging == null) return;
+
+        var scene = GD.Load<PackedScene>("res://Scenes/WorldItem.tscn");
+        var worldItem = scene.Instantiate<WorldItem>();
+
+        worldItem.Data = _dragging.Data;
+        worldItem.Count = _dragging.Count;
+
+        // Позиция — рядом с игроком в сторону курсора
+        Vector2 playerPos = _ownerPlayer.GlobalPosition;
+        Vector2 mouseGlobal = GetGlobalMousePosition();
+        Vector2 dir = (mouseGlobal - playerPos).Normalized();
+        worldItem.GlobalPosition = playerPos + dir * 60f;
+
+        GetTree().CurrentScene.AddChild(worldItem);
+
+        _dragging = null;
+        Input.MouseMode = Input.MouseModeEnum.Visible;
+        QueueRedraw();
     }
 
     // ==================== ХЕЛПЕРЫ ====================

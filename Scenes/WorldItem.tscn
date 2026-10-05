@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c6wmj4rs1k8u7"]
+
+[ext_resource type="FontFile" uid="uid://ci6fja1h6awu3" path="res://Fonts/Monocraft.otf" id="1_phxcw"]
+[ext_resource type="Script" uid="uid://do76bxmwh28tt" path="res://Scripts/Inventory/WorldItem.cs" id="1_x7ljn"]
+[ext_resource type="Shader" uid="uid://c7nr404h3j1ip" path="res://Shaders/Outline.gdshader" id="2_8ffh5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x7ljn"]
+shader = ExtResource("2_8ffh5")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_size = 1.0000000475
+shader_parameter/texture_size = Vector2(64, 64)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e07v4"]
+
+[node name="WorldItem" type="Area2D" unique_id=1969194048]
+script = ExtResource("1_x7ljn")
+
+[node name="Outline" type="Sprite2D" parent="." unique_id=396410184]
+visible = false
+texture_filter = 1
+material = SubResource("ShaderMaterial_x7ljn")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1138632495]
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1638608037]
+shape = SubResource("CircleShape2D_e07v4")
+
+[node name="NameLabel" type="Label" parent="." unique_id=612978307]
+texture_filter = 1
+offset_left = -150.0
+offset_top = -40.0
+offset_right = 150.0
+offset_bottom = -17.0
+theme_override_fonts/font = ExtResource("1_phxcw")
+theme_override_font_sizes/font_size = 18
+text = "Name (99)"
+horizontal_alignment = 1

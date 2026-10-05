@@ -24,6 +24,10 @@ public partial class Character : CharacterBody2D
     private Spear _spear;                         // Копьё
     private AnimatedSprite2D _sprite;             // Теперь это AnimatedSprite2D, заменил "Sprite2D _sprite;" 
     private InventoryUI _inventoryUI;             // Инвентарь
+    private InventoryContainer _inventoryContainer;
+
+    private System.Collections.Generic.List<WorldItem> _nearbyItems = new();
+    private WorldItem _nearestItem;
 
     public override void _Ready()
     {
@@ -34,6 +38,7 @@ public partial class Character : CharacterBody2D
         _sprite = GetNode<AnimatedSprite2D>("Григорий");    // Теперь это AnimatedSprite2D, заменил "Sprite2D _sprite; на Григорий"
         
         _inventoryUI = GetNode<InventoryUI>("InventoryLayer/InventoryUI");
+        _inventoryUI.SetOwnerPlayer(this);
         _inventoryUI.Visible = false;
 
         // Загружаем шаблон контейнера
@@ -41,7 +46,7 @@ public partial class Character : CharacterBody2D
             "res://Data/Containers/backpack.tres");
 
         // Создаём рантайм-контейнер
-        var inv = new InventoryContainer(containerData);
+        _inventoryContainer = new InventoryContainer(containerData);
 
         // Кладём туда тестовые предметы (пока просто для проверки)
         var appleData = GD.Load<ItemData>("res://Data/Items/apple.tres");
@@ -49,14 +54,14 @@ public partial class Character : CharacterBody2D
         var travel_potData = GD.Load<ItemData>("res://Data/Items/travel_pot.tres");
 
         for (int i = 0; i < 13; i++)
-            inv.TryAddItem(new ItemInstance(appleData));
+            _inventoryContainer.TryAddItem(new ItemInstance(appleData));
         
-        inv.TryAddItem(new ItemInstance(peasant_pitchforkData));
-        inv.TryAddItem(new ItemInstance(travel_potData));
+        _inventoryContainer.TryAddItem(new ItemInstance(peasant_pitchforkData));
+        _inventoryContainer.TryAddItem(new ItemInstance(travel_potData));
 
         // Находим UI и связываем
         _inventoryUI = GetNode<InventoryUI>("InventoryLayer/InventoryUI");
-        _inventoryUI.Bind(inv, containerData.Icon);
+        _inventoryUI.Bind(_inventoryContainer, containerData.Icon);
         _inventoryUI.Visible = false;
     }
 
@@ -73,6 +78,17 @@ public partial class Character : CharacterBody2D
 
             GetViewport().SetInputAsHandled();
         }
+
+        if (@event.IsActionPressed("interact") && _nearestItem != null)
+        {
+            PickupItem(_nearestItem);
+            GetViewport().SetInputAsHandled();
+        }
+    }
+
+    public override void _Process(double delta)
+    {
+        UpdateNearestItem();
     }
 
     public override void _PhysicsProcess(double delta)
@@ -179,5 +195,70 @@ public partial class Character : CharacterBody2D
 
         // Плавно двигаем камеру за персонажем
         _camera.GlobalPosition = _camera.GlobalPosition.Lerp(GlobalPosition, CameraSmoothSpeed * dt);
+    }
+
+    // WORLD ITEMS
+    public void RegisterNearbyItem(WorldItem item)
+    {
+        if (!_nearbyItems.Contains(item))
+            _nearbyItems.Add(item);
+    }
+
+    public void UnregisterNearbyItem(WorldItem item)
+    {
+        if (item == null) return;
+        if (!IsInstanceValid(item)) return;
+
+        item.SetHighlighted(false);   // Сбросить подсветку перед удалением из списка
+        _nearbyItems.Remove(item);
+    }
+
+    private void UpdateNearestItem()
+    {
+        _nearestItem = null;
+        float minDist = float.MaxValue;
+
+        foreach (var item in _nearbyItems)
+        {
+            if (item == null || !IsInstanceValid(item)) continue;
+
+            float dist = GlobalPosition.DistanceSquaredTo(item.GlobalPosition);
+            if (dist < minDist)
+            {
+                minDist = dist;
+                _nearestItem = item;
+            }
+        }
+
+        // Подсвечиваем только ближайший
+        foreach (var item in _nearbyItems)
+        {
+            if (item == null || !IsInstanceValid(item)) continue;
+            item.SetHighlighted(item == _nearestItem);
+        }
+    }
+
+    private void PickupItem(WorldItem worldItem)
+    {
+        if (worldItem == null || !IsInstanceValid(worldItem)) return;
+
+        // Создаём ItemInstance с данными из WorldItem
+        var instance = new ItemInstance(worldItem.Data)
+        {
+            Count = worldItem.Count
+        };
+
+        // Пробуем положить в инвентарь
+        if (_inventoryContainer.TryAddItem(instance))
+        {
+            // Успех — удаляем предмет со сцены и из списка
+            _nearbyItems.Remove(worldItem);
+            worldItem.QueueFree();
+            _inventoryUI.QueueRedraw();
+        }
+        else
+        {
+            GD.Print("Нет места в инвентаре!");
+        }
     }
 }
