@@ -11,7 +11,6 @@ config_version=5
 [application]
 
 config/name="SpearMan"
-run/main_scene="res://node_2d.tscn"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -31,7 +30,7 @@ project/assembly_name="SpearMan"
 folder_colors={
 "res://Data/": "gray",
 "res://Scenes/": "orange",
-"res://Scripts/": "blue",
+"res://Scripts/": "red",
 "res://Shaders/": "purple",
 "res://Sprites/": "pink"
 }
@@ -97,4 +96,4 @@ interact={
 
 [rendering]
 
-rendering_device/driver.windows="d3d12"
+anti_aliasing/quality/msaa_3d=2
