@@ -60,7 +60,7 @@ public partial class Character : CharacterBody2D
         _inventoryContainer.TryAddItem(new ItemInstance(travel_potData));
 
         // Находим UI и связываем
-        _inventoryUI = GetNode<InventoryUI>("InventoryLayer/InventoryUI");
+        //_inventoryUI = GetNode<InventoryUI>("InventoryLayer/InventoryUI");
         _inventoryUI.Bind(_inventoryContainer, containerData.Icon);
         _inventoryUI.Visible = false;
     }
