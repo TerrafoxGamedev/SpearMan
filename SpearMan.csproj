@@ -4,4 +4,7 @@
     <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="_legacy_2d/**/*.cs" />
+  </ItemGroup>
 </Project>

@@ -377,6 +377,14 @@ public partial class InventoryUI : Control
 
     public void ThrowDraggedItemToWorld()
     {
+        // TODO: переписать под 3D, когда появится WorldItem3D
+        GD.Print("Throw to world пока не реализовано");
+        if (_dragging == null) return;
+        _dragging = null;
+        Input.MouseMode = Input.MouseModeEnum.Visible;
+        QueueRedraw();
+    }
+    /*{
         if (_dragging == null) return;
 
         var scene = GD.Load<PackedScene>("res://Scenes/WorldItem.tscn");
@@ -396,7 +404,7 @@ public partial class InventoryUI : Control
         _dragging = null;
         Input.MouseMode = Input.MouseModeEnum.Visible;
         QueueRedraw();
-    }
+    }*/
 
     // ==================== ХЕЛПЕРЫ ====================
 
