@@ -1,0 +1,2001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<canvas version="1.1" width="1600" height="1600" xres="2834.645752" yres="2834.645752" gamma-r="1.000000" gamma-g="1.000000" gamma-b="1.000000" view-box="-8.654513 8.653160 8.654513 -8.653160" antialias="1" fps="24.000" begin-time="0f" end-time="5s" bgcolor="0.500000 0.500000 0.500000 1.000000">
+  <name>Григорий</name>
+  <meta name="background_first_color" content="0.880000 0.880000 0.880000"/>
+  <meta name="background_rendering" content="0"/>
+  <meta name="background_second_color" content="0.650000 0.650000 0.650000"/>
+  <meta name="background_size" content="15.000000 15.000000"/>
+  <meta name="grid_color" content="0.623529 0.623529 0.623529"/>
+  <meta name="grid_show" content="0"/>
+  <meta name="grid_size" content="0.250000 0.250000"/>
+  <meta name="grid_snap" content="0"/>
+  <meta name="guide_color" content="0.435294 0.435294 1.000000"/>
+  <meta name="guide_show" content="1"/>
+  <meta name="guide_snap" content="0"/>
+  <meta name="jack_offset" content="0.000000"/>
+  <meta name="onion_skin" content="0"/>
+  <meta name="onion_skin_future" content="0"/>
+  <meta name="onion_skin_past" content="1"/>
+  <keyframe time="0f" active="true"/>
+  <bones>
+    <bone_root type="bone_object" guid="AFF2C4B5ADB3EED765743B112A1D9E4B"/>
+    <bone type="bone_object" guid="2D75EDF9932EB69759618E133A5BD4E8">
+      <name>
+        <string>Bone 1</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="AFF2C4B5ADB3EED765743B112A1D9E4B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="0.000000"/>
+      </angle>
+      <scalelx>
+        <real value="1.0000000000"/>
+      </scalelx>
+      <width>
+        <real value="0.1000000000"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.1000000000"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="0936F8D683A816463F6442299F48D4DB">
+      <name>
+        <string>Bone 2</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="AFF2C4B5ADB3EED765743B112A1D9E4B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>-0.0635952577</x>
+          <y>-0.0623798855</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="90.545738"/>
+      </angle>
+      <scalelx>
+        <real value="1.9498348253"/>
+      </scalelx>
+      <width>
+        <real value="1.7967745061"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="1.7661975020"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="4E85505C78227323CFBC3122FE8B5F2B">
+      <name>
+        <string>Bone 3</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="AFF2C4B5ADB3EED765743B112A1D9E4B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>-0.0635952577</x>
+          <y>-0.0623798855</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="90.545738"/>
+      </angle>
+      <scalelx>
+        <real value="1.9498348253"/>
+      </scalelx>
+      <width>
+        <real value="1.7967745061"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="1.7661975020"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="5CB7A8C1D2437E630640DCB96CFCE251">
+      <name>
+        <string>Bone 18</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="0936F8D683A816463F6442299F48D4DB"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>-0.0758206695</x>
+          <y>0.0756992251</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="188.071228"/>
+      </angle>
+      <scalelx>
+        <real value="1.2395468277"/>
+      </scalelx>
+      <width>
+        <real value="1.7661975020"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="1.7255846887"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="A91553D38CEB6007A25DAFC7CF8EE78B">
+      <name>
+        <string>Bone 4</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="0936F8D683A816463F6442299F48D4DB"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>0.9128205180</x>
+          <y>-0.2600066364</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-90.715569"/>
+      </angle>
+      <scalelx>
+        <real value="1.0418062719"/>
+      </scalelx>
+      <width>
+        <real value="0.0392372845"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.0871618627"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="008170BA8F5E4E673BC6F5BBB7B82FE8">
+      <name>
+        <string>Bone 10</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="0936F8D683A816463F6442299F48D4DB"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>0.9025849104</x>
+          <y>0.2582006752</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="90.087799"/>
+      </angle>
+      <scalelx>
+        <real value="2.7524388630"/>
+      </scalelx>
+      <width>
+        <real value="0.4414696124"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3532004749"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="64856D6D602F01BBF54F3851567CE4E7">
+      <name>
+        <string>Bone 12</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="0936F8D683A816463F6442299F48D4DB"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-5.714647"/>
+      </angle>
+      <scalelx>
+        <real value="1.4636194793"/>
+      </scalelx>
+      <width>
+        <real value="1.7661975020"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="2.2219497633"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="C487937633DEA79D49FFEB7105B92864">
+      <name>
+        <string>Bone 16</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="0936F8D683A816463F6442299F48D4DB"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="0.000000"/>
+      </angle>
+      <scalelx>
+        <real value="1.0000000000"/>
+      </scalelx>
+      <width>
+        <real value="1.7661975020"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="1.7661975020"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="D5FB8EAFD2178724821EEEB2CDC383BA">
+      <name>
+        <string>Bone 17</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="4E85505C78227323CFBC3122FE8B5F2B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="0.000000"/>
+      </angle>
+      <scalelx>
+        <real value="1.0000000000"/>
+      </scalelx>
+      <width>
+        <real value="1.7661975020"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="1.7661975020"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="9A93225897165C6939C8F5F579714169">
+      <name>
+        <string>Bone 11</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="4E85505C78227323CFBC3122FE8B5F2B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>0.9025849104</x>
+          <y>0.2582006752</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="90.087799"/>
+      </angle>
+      <scalelx>
+        <real value="2.7524388630"/>
+      </scalelx>
+      <width>
+        <real value="0.4414696124"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3532004749"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="5528CB70424AE26C5252C023B4506947">
+      <name>
+        <string>Bone 19</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="4E85505C78227323CFBC3122FE8B5F2B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>-0.0758206695</x>
+          <y>0.0756992251</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="188.071228"/>
+      </angle>
+      <scalelx>
+        <real value="1.2395468277"/>
+      </scalelx>
+      <width>
+        <real value="1.7661975020"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="1.7255846887"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="282F11051ED467C3D86F33B2271093BB">
+      <name>
+        <string>Bone 5</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="4E85505C78227323CFBC3122FE8B5F2B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>0.9128205180</x>
+          <y>-0.2600066364</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-90.715569"/>
+      </angle>
+      <scalelx>
+        <real value="1.0418062719"/>
+      </scalelx>
+      <width>
+        <real value="0.0392372845"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.0871618627"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="537D328A1773801CD5B6CA11E99C60C8">
+      <name>
+        <string>Bone 13</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="4E85505C78227323CFBC3122FE8B5F2B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-5.714647"/>
+      </angle>
+      <scalelx>
+        <real value="1.4636194793"/>
+      </scalelx>
+      <width>
+        <real value="1.7661975020"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="2.2219497633"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="EC4A7AEBB7BB547651D69A961362A83F">
+      <name>
+        <string>Bone 20</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="5CB7A8C1D2437E630640DCB96CFCE251"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.4003471136</x>
+          <y>-0.3193920851</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-90.628868"/>
+      </angle>
+      <scalelx>
+        <real value="1.0689713983"/>
+      </scalelx>
+      <width>
+        <real value="0.2393872854"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.5219848868"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="F6412C7C42182C7ACCB4F49D86D5BEB6">
+      <name>
+        <string>Bone 22</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="5CB7A8C1D2437E630640DCB96CFCE251"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.5314278603</x>
+          <y>0.2570721209</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="76.985016"/>
+      </angle>
+      <scalelx>
+        <real value="0.9685916962"/>
+      </scalelx>
+      <width>
+        <real value="0.2076338461"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.2679290981"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="25F9E9DE70D1F4C9C3A993453BB711D5">
+      <name>
+        <string>Bone 6</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="A91553D38CEB6007A25DAFC7CF8EE78B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.3351849318</x>
+          <y>0.0973487645</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="0.993744"/>
+      </angle>
+      <scalelx>
+        <real value="1.5971847373"/>
+      </scalelx>
+      <width>
+        <real value="0.3347578099"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3162190810"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="2AABC4D9AEEDC487ECC4E7F29C8C5648">
+      <name>
+        <string>Bone 14</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="008170BA8F5E4E673BC6F5BBB7B82FE8"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="10.143936"/>
+      </angle>
+      <scalelx>
+        <real value="1.5725592903"/>
+      </scalelx>
+      <width>
+        <real value="0.3968188370"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3388541485"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="300BE2DDA298A540AF1D7AC7C16B9312">
+      <name>
+        <string>Bone 15</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="9A93225897165C6939C8F5F579714169"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="10.143936"/>
+      </angle>
+      <scalelx>
+        <real value="1.5725592903"/>
+      </scalelx>
+      <width>
+        <real value="0.3968188370"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3388541485"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="2C056C8E9C09DA6B881795FFE0D542FE">
+      <name>
+        <string>Bone 21</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="5528CB70424AE26C5252C023B4506947"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.4003471136</x>
+          <y>-0.3193920851</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-90.628868"/>
+      </angle>
+      <scalelx>
+        <real value="1.0689713983"/>
+      </scalelx>
+      <width>
+        <real value="0.2393872854"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.5219848868"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="B38EA7E318421D195D3AB2DC27308E38">
+      <name>
+        <string>Bone 23</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="5528CB70424AE26C5252C023B4506947"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.5314278603</x>
+          <y>0.2570721209</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="76.985016"/>
+      </angle>
+      <scalelx>
+        <real value="0.9685916962"/>
+      </scalelx>
+      <width>
+        <real value="0.2076338461"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.2679290981"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="56A9468A51DBDE6820EF360C03F835FE">
+      <name>
+        <string>Bone 7</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="282F11051ED467C3D86F33B2271093BB"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.3351849318</x>
+          <y>0.0973487645</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-33.166775"/>
+      </angle>
+      <scalelx>
+        <real value="1.5971847373"/>
+      </scalelx>
+      <width>
+        <real value="0.3347578099"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3162190810"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="261C54C71F1B9E8A0678291CC1C22539">
+      <name>
+        <string>Bone 28</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="EC4A7AEBB7BB547651D69A961362A83F"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="81.688751"/>
+      </angle>
+      <scalelx>
+        <real value="0.9878872546"/>
+      </scalelx>
+      <width>
+        <real value="0.1813322834"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.4275575182"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="FE65EE76E4AF3052C9D8DE57E17D8185">
+      <name>
+        <string>Bone 24</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="F6412C7C42182C7ACCB4F49D86D5BEB6"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1396982670</x>
+          <y>-0.3061986566</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-71.218430"/>
+      </angle>
+      <scalelx>
+        <real value="0.7476262436"/>
+      </scalelx>
+      <width>
+        <real value="0.4335138803"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3929998044"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="EA1E3E4F244FDEA96E3C88224CB48E62">
+      <name>
+        <string>Bone 8</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="25F9E9DE70D1F4C9C3A993453BB711D5"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-3.857107"/>
+      </angle>
+      <scalelx>
+        <real value="1.1792929870"/>
+      </scalelx>
+      <width>
+        <real value="0.3162190810"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.2599661729"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="9B5C5D696B99D51F6534D43B907AC60B">
+      <name>
+        <string>Bone 29</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="2C056C8E9C09DA6B881795FFE0D542FE"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="81.688751"/>
+      </angle>
+      <scalelx>
+        <real value="0.9878872546"/>
+      </scalelx>
+      <width>
+        <real value="0.1813322834"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.4275575182"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="D53CE90D940F7285E535222DAE9DDFF3">
+      <name>
+        <string>Bone 25</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="B38EA7E318421D195D3AB2DC27308E38"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1396982670</x>
+          <y>-0.3061986566</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-71.218430"/>
+      </angle>
+      <scalelx>
+        <real value="0.7476262436"/>
+      </scalelx>
+      <width>
+        <real value="0.4335138803"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3929998044"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="8735CECB23DC83254F11A3C7B53D83F1">
+      <name>
+        <string>Bone 9</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="56A9468A51DBDE6820EF360C03F835FE"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="5.979032"/>
+      </angle>
+      <scalelx>
+        <real value="1.1792929870"/>
+      </scalelx>
+      <width>
+        <real value="0.3162190810"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.2599661729"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="29C606F4DA3630F6DFC482EB40947292">
+      <name>
+        <string>Bone 30</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="261C54C71F1B9E8A0678291CC1C22539"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-2.449761"/>
+      </angle>
+      <scalelx>
+        <real value="0.7562729987"/>
+      </scalelx>
+      <width>
+        <real value="0.3965002697"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3399445860"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="2CD513DEB2D613C9CCAB48F37F3CF15F">
+      <name>
+        <string>Bone 26</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="FE65EE76E4AF3052C9D8DE57E17D8185"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1862992048</x>
+          <y>-0.0548919030</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-18.063679"/>
+      </angle>
+      <scalelx>
+        <real value="0.7837384399"/>
+      </scalelx>
+      <width>
+        <real value="0.4116913392"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3678584295"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="950EE9F8F54928C39AD4AE738BDEFDC7">
+      <name>
+        <string>Bone 31</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="9B5C5D696B99D51F6534D43B907AC60B"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1000000238</x>
+          <y>0.0000000000</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-2.449761"/>
+      </angle>
+      <scalelx>
+        <real value="0.7562729987"/>
+      </scalelx>
+      <width>
+        <real value="0.3965002697"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3399445860"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+    <bone type="bone_object" guid="28BACB71CC50FC3AEFBFAD2FF7C00A7A">
+      <name>
+        <string>Bone 27</string>
+      </name>
+      <parent>
+        <bone_valuenode type="bone_object" guid="D53CE90D940F7285E535222DAE9DDFF3"/>
+      </parent>
+      <origin>
+        <vector>
+          <x>1.1862992048</x>
+          <y>-0.0548919030</y>
+        </vector>
+      </origin>
+      <angle>
+        <angle value="-18.063679"/>
+      </angle>
+      <scalelx>
+        <real value="0.7837384399"/>
+      </scalelx>
+      <width>
+        <real value="0.4116913392"/>
+      </width>
+      <scalex>
+        <real value="1.0000000000"/>
+      </scalex>
+      <tipwidth>
+        <real value="0.3678584295"/>
+      </tipwidth>
+      <bone_depth>
+        <real value="0.0000000000"/>
+      </bone_depth>
+      <length>
+        <real value="1.0000000000"/>
+      </length>
+    </bone>
+  </bones>
+  <layer type="group" active="true" exclude_from_rendering="false" version="0.3" desc="Pers">
+    <param name="z_depth">
+      <real value="0.0000000000"/>
+    </param>
+    <param name="amount">
+      <real value="1.0000000000"/>
+    </param>
+    <param name="blend_method">
+      <integer value="0" static="true"/>
+    </param>
+    <param name="origin">
+      <vector>
+        <x>0.0000000000</x>
+        <y>0.0000000000</y>
+      </vector>
+    </param>
+    <param name="transformation">
+      <composite type="transformation">
+        <offset>
+          <vector>
+            <x>0.0000000000</x>
+            <y>0.0000000000</y>
+          </vector>
+        </offset>
+        <angle>
+          <angle value="0.000000"/>
+        </angle>
+        <skew_angle>
+          <angle value="0.000000"/>
+        </skew_angle>
+        <scale>
+          <vector>
+            <x>1.0000000000</x>
+            <y>1.0000000000</y>
+          </vector>
+        </scale>
+      </composite>
+    </param>
+    <param name="canvas">
+      <canvas>
+        <layer type="group" active="true" exclude_from_rendering="false" version="0.3" desc="Leg R">
+          <param name="z_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="amount">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="blend_method">
+            <integer value="0" static="true"/>
+          </param>
+          <param name="origin">
+            <vector>
+              <x>0.0000000000</x>
+              <y>0.0000000000</y>
+            </vector>
+          </param>
+          <param name="transformation">
+            <composite type="transformation">
+              <offset>
+                <vector>
+                  <x>0.0000000000</x>
+                  <y>0.0000000000</y>
+                </vector>
+              </offset>
+              <angle>
+                <angle value="0.000000"/>
+              </angle>
+              <skew_angle>
+                <angle value="0.000000"/>
+              </skew_angle>
+              <scale>
+                <vector>
+                  <x>1.0000000000</x>
+                  <y>1.0000000000</y>
+                </vector>
+              </scale>
+            </composite>
+          </param>
+          <param name="canvas">
+            <canvas>
+              <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Golen R.png">
+                <param name="z_depth">
+                  <real value="0.0000000000"/>
+                </param>
+                <param name="amount">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="blend_method">
+                  <integer value="0" static="true"/>
+                </param>
+                <param name="tl">
+                  <vector>
+                    <x>-8.6545124054</x>
+                    <y>8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="br">
+                  <vector>
+                    <x>8.6545124054</x>
+                    <y>-8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="c">
+                  <integer value="1" static="true"/>
+                </param>
+                <param name="gamma_adjust">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="filename">
+                  <string>Слоёный Григорий\Golen R.png</string>
+                </param>
+                <param name="time_offset">
+                  <time value="0s"/>
+                </param>
+              </layer>
+              <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Bedro R.png">
+                <param name="z_depth">
+                  <real value="0.0000000000"/>
+                </param>
+                <param name="amount">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="blend_method">
+                  <integer value="0" static="true"/>
+                </param>
+                <param name="tl">
+                  <vector>
+                    <x>-8.6545124054</x>
+                    <y>8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="br">
+                  <vector>
+                    <x>8.6545124054</x>
+                    <y>-8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="c">
+                  <integer value="1" static="true"/>
+                </param>
+                <param name="gamma_adjust">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="filename">
+                  <string>Слоёный Григорий\Bedro R.png</string>
+                </param>
+                <param name="time_offset">
+                  <time value="0s"/>
+                </param>
+              </layer>
+            </canvas>
+          </param>
+          <param name="time_dilation">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="time_offset">
+            <time value="0s"/>
+          </param>
+          <param name="children_lock">
+            <bool value="false" static="true"/>
+          </param>
+          <param name="outline_grow">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range">
+            <bool value="false" static="true"/>
+          </param>
+          <param name="z_range_position">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range_blur">
+            <real value="0.0000000000"/>
+          </param>
+        </layer>
+        <layer type="group" active="true" exclude_from_rendering="false" version="0.3" desc="Leg L">
+          <param name="z_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="amount">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="blend_method">
+            <integer value="0" static="true"/>
+          </param>
+          <param name="origin">
+            <vector>
+              <x>0.0000000000</x>
+              <y>0.0000000000</y>
+            </vector>
+          </param>
+          <param name="transformation">
+            <composite type="transformation">
+              <offset>
+                <vector>
+                  <x>0.0000000000</x>
+                  <y>0.0000000000</y>
+                </vector>
+              </offset>
+              <angle>
+                <angle value="0.000000"/>
+              </angle>
+              <skew_angle>
+                <angle value="0.000000"/>
+              </skew_angle>
+              <scale>
+                <vector>
+                  <x>1.0000000000</x>
+                  <y>1.0000000000</y>
+                </vector>
+              </scale>
+            </composite>
+          </param>
+          <param name="canvas">
+            <canvas>
+              <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Golen L.png">
+                <param name="z_depth">
+                  <real value="0.0000000000"/>
+                </param>
+                <param name="amount">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="blend_method">
+                  <integer value="0" static="true"/>
+                </param>
+                <param name="tl">
+                  <vector>
+                    <x>-8.6545124054</x>
+                    <y>8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="br">
+                  <vector>
+                    <x>8.6545124054</x>
+                    <y>-8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="c">
+                  <integer value="1" static="true"/>
+                </param>
+                <param name="gamma_adjust">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="filename">
+                  <string>Слоёный Григорий\Golen L.png</string>
+                </param>
+                <param name="time_offset">
+                  <time value="0s"/>
+                </param>
+              </layer>
+              <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Bedro L.png">
+                <param name="z_depth">
+                  <real value="0.0000000000"/>
+                </param>
+                <param name="amount">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="blend_method">
+                  <integer value="0" static="true"/>
+                </param>
+                <param name="tl">
+                  <vector>
+                    <x>-8.6545124054</x>
+                    <y>8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="br">
+                  <vector>
+                    <x>8.6545124054</x>
+                    <y>-8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="c">
+                  <integer value="1" static="true"/>
+                </param>
+                <param name="gamma_adjust">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="filename">
+                  <string>Слоёный Григорий\Bedro L.png</string>
+                </param>
+                <param name="time_offset">
+                  <time value="0s"/>
+                </param>
+              </layer>
+            </canvas>
+          </param>
+          <param name="time_dilation">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="time_offset">
+            <time value="0s"/>
+          </param>
+          <param name="children_lock">
+            <bool value="false" static="true"/>
+          </param>
+          <param name="outline_grow">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range">
+            <bool value="false" static="true"/>
+          </param>
+          <param name="z_range_position">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range_blur">
+            <real value="0.0000000000"/>
+          </param>
+        </layer>
+        <layer type="group" active="true" exclude_from_rendering="false" version="0.3" desc="Arm R">
+          <param name="z_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="amount">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="blend_method">
+            <integer value="0" static="true"/>
+          </param>
+          <param name="origin">
+            <vector>
+              <x>0.0000000000</x>
+              <y>0.0000000000</y>
+            </vector>
+          </param>
+          <param name="transformation">
+            <composite type="transformation">
+              <offset>
+                <vector>
+                  <x>0.0000000000</x>
+                  <y>0.0000000000</y>
+                </vector>
+              </offset>
+              <angle>
+                <angle value="0.000000"/>
+              </angle>
+              <skew_angle>
+                <angle value="0.000000"/>
+              </skew_angle>
+              <scale>
+                <vector>
+                  <x>1.0000000000</x>
+                  <y>1.0000000000</y>
+                </vector>
+              </scale>
+            </composite>
+          </param>
+          <param name="canvas">
+            <canvas>
+              <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Forearm R.png">
+                <param name="z_depth">
+                  <real value="0.0000000000"/>
+                </param>
+                <param name="amount">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="blend_method">
+                  <integer value="0" static="true"/>
+                </param>
+                <param name="tl">
+                  <vector>
+                    <x>-8.6545124054</x>
+                    <y>8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="br">
+                  <vector>
+                    <x>8.6545124054</x>
+                    <y>-8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="c">
+                  <integer value="1" static="true"/>
+                </param>
+                <param name="gamma_adjust">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="filename">
+                  <string>Слоёный Григорий\Forearm R.png</string>
+                </param>
+                <param name="time_offset">
+                  <time value="0s"/>
+                </param>
+              </layer>
+              <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Upper arm R.png">
+                <param name="z_depth">
+                  <real value="0.0000000000"/>
+                </param>
+                <param name="amount">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="blend_method">
+                  <integer value="0" static="true"/>
+                </param>
+                <param name="tl">
+                  <vector>
+                    <x>-8.6545124054</x>
+                    <y>8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="br">
+                  <vector>
+                    <x>8.6545124054</x>
+                    <y>-8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="c">
+                  <integer value="1" static="true"/>
+                </param>
+                <param name="gamma_adjust">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="filename">
+                  <string>Слоёный Григорий\Upper arm R.png</string>
+                </param>
+                <param name="time_offset">
+                  <time value="0s"/>
+                </param>
+              </layer>
+            </canvas>
+          </param>
+          <param name="time_dilation">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="time_offset">
+            <time value="0s"/>
+          </param>
+          <param name="children_lock">
+            <bool value="false" static="true"/>
+          </param>
+          <param name="outline_grow">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range">
+            <bool value="false" static="true"/>
+          </param>
+          <param name="z_range_position">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range_blur">
+            <real value="0.0000000000"/>
+          </param>
+        </layer>
+        <layer type="group" active="true" exclude_from_rendering="false" version="0.3" desc="Arm L">
+          <param name="z_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="amount">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="blend_method">
+            <integer value="0" static="true"/>
+          </param>
+          <param name="origin">
+            <vector>
+              <x>0.0000000000</x>
+              <y>0.0000000000</y>
+            </vector>
+          </param>
+          <param name="transformation">
+            <composite type="transformation">
+              <offset>
+                <vector>
+                  <x>0.0000000000</x>
+                  <y>0.0000000000</y>
+                </vector>
+              </offset>
+              <angle>
+                <angle value="0.000000"/>
+              </angle>
+              <skew_angle>
+                <angle value="0.000000"/>
+              </skew_angle>
+              <scale>
+                <vector>
+                  <x>1.0000000000</x>
+                  <y>1.0000000000</y>
+                </vector>
+              </scale>
+            </composite>
+          </param>
+          <param name="canvas">
+            <canvas>
+              <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Upper arm L.png">
+                <param name="z_depth">
+                  <real value="0.0000000000"/>
+                </param>
+                <param name="amount">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="blend_method">
+                  <integer value="0" static="true"/>
+                </param>
+                <param name="tl">
+                  <vector>
+                    <x>-8.6545124054</x>
+                    <y>8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="br">
+                  <vector>
+                    <x>8.6545124054</x>
+                    <y>-8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="c">
+                  <integer value="1" static="true"/>
+                </param>
+                <param name="gamma_adjust">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="filename">
+                  <string>Слоёный Григорий\Upper arm L.png</string>
+                </param>
+                <param name="time_offset">
+                  <time value="0s"/>
+                </param>
+              </layer>
+              <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Forearm L.png">
+                <param name="z_depth">
+                  <real value="0.0000000000"/>
+                </param>
+                <param name="amount">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="blend_method">
+                  <integer value="0" static="true"/>
+                </param>
+                <param name="tl">
+                  <vector>
+                    <x>-8.6545124054</x>
+                    <y>8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="br">
+                  <vector>
+                    <x>8.6545124054</x>
+                    <y>-8.6531600952</y>
+                  </vector>
+                </param>
+                <param name="c">
+                  <integer value="1" static="true"/>
+                </param>
+                <param name="gamma_adjust">
+                  <real value="1.0000000000"/>
+                </param>
+                <param name="filename">
+                  <string>Слоёный Григорий\Forearm L.png</string>
+                </param>
+                <param name="time_offset">
+                  <time value="0s"/>
+                </param>
+              </layer>
+            </canvas>
+          </param>
+          <param name="time_dilation">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="time_offset">
+            <time value="0s"/>
+          </param>
+          <param name="children_lock">
+            <bool value="false" static="true"/>
+          </param>
+          <param name="outline_grow">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range">
+            <bool value="false" static="true"/>
+          </param>
+          <param name="z_range_position">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="z_range_blur">
+            <real value="0.0000000000"/>
+          </param>
+        </layer>
+        <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Body.png">
+          <param name="z_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="amount">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="blend_method">
+            <integer value="0" static="true"/>
+          </param>
+          <param name="tl">
+            <vector>
+              <x>-8.6545124054</x>
+              <y>8.6531600952</y>
+            </vector>
+          </param>
+          <param name="br">
+            <vector>
+              <x>8.6545124054</x>
+              <y>-8.6531600952</y>
+            </vector>
+          </param>
+          <param name="c">
+            <integer value="1" static="true"/>
+          </param>
+          <param name="gamma_adjust">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="filename">
+            <string>Слоёный Григорий\Body.png</string>
+          </param>
+          <param name="time_offset">
+            <time value="0s"/>
+          </param>
+        </layer>
+        <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Head.png">
+          <param name="z_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="amount">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="blend_method">
+            <integer value="0" static="true"/>
+          </param>
+          <param name="tl">
+            <vector>
+              <x>-8.6545124054</x>
+              <y>8.6531600952</y>
+            </vector>
+          </param>
+          <param name="br">
+            <vector>
+              <x>8.6545124054</x>
+              <y>-8.6531600952</y>
+            </vector>
+          </param>
+          <param name="c">
+            <integer value="1" static="true"/>
+          </param>
+          <param name="gamma_adjust">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="filename">
+            <string>Слоёный Григорий\Head.png</string>
+          </param>
+          <param name="time_offset">
+            <time value="0s"/>
+          </param>
+        </layer>
+        <layer type="import" active="true" exclude_from_rendering="false" version="0.1" desc="Face.png">
+          <param name="z_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="amount">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="blend_method">
+            <integer value="0" static="true"/>
+          </param>
+          <param name="tl">
+            <vector>
+              <x>-8.6545124054</x>
+              <y>8.6531600952</y>
+            </vector>
+          </param>
+          <param name="br">
+            <vector>
+              <x>8.6545124054</x>
+              <y>-8.6531600952</y>
+            </vector>
+          </param>
+          <param name="c">
+            <integer value="1" static="true"/>
+          </param>
+          <param name="gamma_adjust">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="filename">
+            <string>Слоёный Григорий\Face.png</string>
+          </param>
+          <param name="time_offset">
+            <time value="0s"/>
+          </param>
+        </layer>
+        <layer type="skeleton_deformation" active="true" exclude_from_rendering="false" version="0.2">
+          <param name="z_depth">
+            <real value="0.0000000000"/>
+          </param>
+          <param name="amount">
+            <real value="1.0000000000"/>
+          </param>
+          <param name="blend_method">
+            <integer value="1" static="true"/>
+          </param>
+          <param name="bones">
+            <static_list type="pair_bone_object_bone_object">
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="EA1E3E4F244FDEA96E3C88224CB48E62"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="8735CECB23DC83254F11A3C7B53D83F1"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="25F9E9DE70D1F4C9C3A993453BB711D5"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="56A9468A51DBDE6820EF360C03F835FE"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="A91553D38CEB6007A25DAFC7CF8EE78B"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="282F11051ED467C3D86F33B2271093BB"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="2AABC4D9AEEDC487ECC4E7F29C8C5648"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="300BE2DDA298A540AF1D7AC7C16B9312"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="008170BA8F5E4E673BC6F5BBB7B82FE8"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="9A93225897165C6939C8F5F579714169"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="64856D6D602F01BBF54F3851567CE4E7"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="537D328A1773801CD5B6CA11E99C60C8"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="29C606F4DA3630F6DFC482EB40947292"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="950EE9F8F54928C39AD4AE738BDEFDC7"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="261C54C71F1B9E8A0678291CC1C22539"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="9B5C5D696B99D51F6534D43B907AC60B"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="EC4A7AEBB7BB547651D69A961362A83F"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="2C056C8E9C09DA6B881795FFE0D542FE"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="2CD513DEB2D613C9CCAB48F37F3CF15F"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="28BACB71CC50FC3AEFBFAD2FF7C00A7A"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="FE65EE76E4AF3052C9D8DE57E17D8185"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="D53CE90D940F7285E535222DAE9DDFF3"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="F6412C7C42182C7ACCB4F49D86D5BEB6"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="B38EA7E318421D195D3AB2DC27308E38"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="5CB7A8C1D2437E630640DCB96CFCE251"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="5528CB70424AE26C5252C023B4506947"/>
+                  </second>
+                </composite>
+              </entry>
+              <entry>
+                <composite type="pair_bone_object_bone_object">
+                  <first>
+                    <bone type="bone_object" guid="0936F8D683A816463F6442299F48D4DB"/>
+                  </first>
+                  <second>
+                    <bone type="bone_object" guid="4E85505C78227323CFBC3122FE8B5F2B"/>
+                  </second>
+                </composite>
+              </entry>
+            </static_list>
+          </param>
+          <param name="point1">
+            <vector>
+              <x>-5.5051660538</x>
+              <y>5.8054285049</y>
+            </vector>
+          </param>
+          <param name="point2">
+            <vector>
+              <x>5.2665443420</x>
+              <y>-4.4818048477</y>
+            </vector>
+          </param>
+          <param name="x_subdivisions">
+            <integer value="32"/>
+          </param>
+          <param name="y_subdivisions">
+            <integer value="32"/>
+          </param>
+        </layer>
+      </canvas>
+    </param>
+    <param name="time_dilation">
+      <real value="1.0000000000"/>
+    </param>
+    <param name="time_offset">
+      <time value="0s"/>
+    </param>
+    <param name="children_lock">
+      <bool value="false"/>
+    </param>
+    <param name="outline_grow">
+      <real value="0.0000000000"/>
+    </param>
+    <param name="z_range">
+      <bool value="false" static="true"/>
+    </param>
+    <param name="z_range_position">
+      <real value="0.0000000000"/>
+    </param>
+    <param name="z_range_depth">
+      <real value="0.0000000000"/>
+    </param>
+    <param name="z_range_blur">
+      <real value="0.0000000000"/>
+    </param>
+  </layer>
+</canvas>
