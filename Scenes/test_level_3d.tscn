@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cdvybqlbhkaiq"]
+
+[ext_resource type="Material" uid="uid://motll2624aj8" path="res://Materials/hat_material.tres" id="1_c3kgw"]
+[ext_resource type="CylinderMesh" uid="uid://c5dwrt8ba62c2" path="res://Materials/hat_crown_mesh.tres" id="2_7bvti"]
+[ext_resource type="SphereMesh" uid="uid://csw4tv223glup" path="res://Materials/red_ball_mesh.tres" id="2_lqot4"]
+[ext_resource type="Material" uid="uid://dagtl7opsfifj" path="res://Materials/snow_material.tres" id="3_ke6ko"]
+[ext_resource type="CylinderMesh" uid="uid://bv6k7hep38wd1" path="res://Materials/hat_brim_mesh.tres" id="5_s357g"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_wbcyq"]
+size = Vector3(20, 0.5, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0duf2"]
+
+[node name="TestLevel3D" type="Node3D" unique_id=26582800]
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=2048452526]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1964910392]
+mesh = SubResource("BoxMesh_wbcyq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=783809668]
+transform = Transform3D(20, 0, 0, 0, 0.5, 0, 0, 0, 20, 0, 0, 0)
+shape = SubResource("BoxShape3D_0duf2")
+
+[node name="Snowman" type="Node3D" parent="." unique_id=970776432]
+
+[node name="HatCrown" type="MeshInstance3D" parent="Snowman" unique_id=464745065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.865, 0)
+material_override = ExtResource("1_c3kgw")
+mesh = ExtResource("2_7bvti")
+
+[node name="Torso" type="MeshInstance3D" parent="Snowman" unique_id=1983540758]
+transform = Transform3D(2.8, 0, 0, 0, 2.8, 0, 0, 0, 2.8, 0, 5.15, 0)
+material_override = ExtResource("3_ke6ko")
+mesh = ExtResource("2_lqot4")
+
+[node name="Head" type="MeshInstance3D" parent="Snowman" unique_id=764022185]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 7.17, 0)
+material_override = ExtResource("3_ke6ko")
+mesh = ExtResource("2_lqot4")
+
+[node name="HatBrim" type="MeshInstance3D" parent="Snowman" unique_id=1609473729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.19, 0)
+material_override = ExtResource("1_c3kgw")
+mesh = ExtResource("5_s357g")
+
+[node name="Body" type="MeshInstance3D" parent="Snowman" unique_id=1165892051]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 2.25, 0)
+material_override = ExtResource("3_ke6ko")
+mesh = ExtResource("2_lqot4")
+
+[node name="Camera" type="Camera3D" parent="." unique_id=1121395819]
+transform = Transform3D(0.90909076, -0.025432711, 0.41582114, 0, 0.9981348, 0.06104854, -0.41659817, -0.055498663, 0.9073951, 5.5, 5.6, 12)
+current = true
+fov = 50.0

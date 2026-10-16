@@ -1,0 +1,12 @@
+---
+description: node-modify не переименовывает ноду; нужное имя пиши в сводку, ноду не удаляй
+alwaysApply: true
+---
+
+# Что ломалось
+
+`node-modify` с путём `Name` и значением `System.String` или `Godot.StringName` не меняет имя. В логе: `Type mismatch: 'System.String' vs 'Godot.StringName'` либо `could not be converted to Godot.StringName`. Нода остаётся со старым именем.
+
+# Как делать
+
+Имя новой ноды задавай при `node-create` полем `name`. Уже существующую ноду не удаляй и не подменяй копией, чтобы сменить имя. В сводке напиши, какое имя на какое нужно поменять: `RedBall` → `Body`.

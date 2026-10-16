@@ -5,6 +5,10 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="_legacy_2d/**/*.cs" />
+    <PackageReference Include="com.IvanMurzak.ReflectorNet" Version="5.4.2" />
+    <PackageReference Include="com.IvanMurzak.McpPlugin" Version="8.7.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addons/godot_mcp/extensions.catalog.json" LogicalName="Godot-MCP.extensions.catalog.json" />
   </ItemGroup>
 </Project>

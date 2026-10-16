@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="SpearMan"
+run/main_scene="uid://cdvybqlbhkaiq"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -25,9 +26,14 @@ window/stretch/aspect="expand"
 
 project/assembly_name="SpearMan"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_mcp/plugin.cfg")
+
 [file_customization]
 
 folder_colors={
+"res://Autoloads/": "red",
 "res://Data/": "gray",
 "res://Scenes/": "orange",
 "res://Scripts/": "red",

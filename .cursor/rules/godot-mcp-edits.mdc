@@ -1,0 +1,24 @@
+---
+description: Как правильно менять объекты Godot через MCP, чтобы не повторять ошибки со сферой
+alwaysApply: true
+---
+
+# Правки через Godot MCP
+
+В `node-modify` и `resource-modify` компоненты `Vector3` и `Color` — это поля, не свойства. Пиши их в `fields`. В `props` правка молча не применяется.
+
+```json
+{"typeName":"Godot.Vector3","fields":[
+  {"name":"X","typeName":"System.Single","value":0},
+  {"name":"Y","typeName":"System.Single","value":5.25},
+  {"name":"Z","typeName":"System.Single","value":0}
+]}
+```
+
+Ссылку на ресурс (`Mesh`, `MaterialOverride`) передавай объектом `ResourceRef`, не строкой пути.
+
+```json
+{"typeName":"Godot.SphereMesh","value":{"instanceId":0,"resourcePath":"res://Materials/red_ball_mesh.tres"}}
+```
+
+У стандартного `SphereMesh` радиус 0.5. Масштаб 10 по всем осям даёт видимый диаметр 10. Чтобы шар лежал на ящике высотой H с центром в нуле, ставь центр шара на `Y = H/2 + 0.5 * scaleY`.
