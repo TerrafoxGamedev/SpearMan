@@ -1,13 +1,17 @@
 [gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://qw1587ko6uyu"]
 
-[ext_resource type="Texture2D" uid="uid://8jn558835pat" path="res://Sprites/Items/Apple.png" id="1_1x05v"]
+[ext_resource type="PackedScene" uid="uid://be0p5rao6g2db" path="res://Models/Food Models/GLB format/apple.glb" id="1_1x05v"]
 [ext_resource type="Script" uid="uid://bps8oeeokhi5p" path="res://Scripts/Inventory/Resources/ItemData.cs" id="1_vuoou"]
 
 [resource]
 script = ExtResource("1_vuoou")
 Id = "apple"
 DisplayName = "Яблоко"
-Icon = ExtResource("1_1x05v")
+Model = ExtResource("1_1x05v")
+Size = Vector2i(3, 3)
 Tags = Array[String](["food"])
 MaxStack = 12
+Mass = 0.2
+CollisionShape = 1
+CollisionSize = Vector3(0.2, 0.2, 0.2)
 metadata/_custom_type_script = "uid://bps8oeeokhi5p"

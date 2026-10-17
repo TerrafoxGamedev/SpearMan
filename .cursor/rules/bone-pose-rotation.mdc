@@ -1,0 +1,19 @@
+---
+description: Поза кости в Godot заменяет покой, а не добавляется к нему
+alwaysApply: true
+---
+
+# Что ломалось
+
+`SetBonePoseRotation` с маленьким поворотом шага заменял покой кости. У бедра покой — разворот, который направляет ногу вниз. После замены нога складывалась вверх через тело, и сапог, привязанный к кости ступни, растягивался к голове. То же делает `Quaternion.Identity`: стоя на месте шаг тоже стирает покой. `SetBonePosePosition` так же заменяет позицию покоя.
+
+# Как делать
+
+Поза — это полный локальный поворот кости. Шаг домножай на покой:
+
+```csharp
+Quaternion rest = skeleton.GetBoneRest(bone).Basis.GetRotationQuaternion();
+skeleton.SetBonePoseRotation(bone, rest * new Quaternion(axis, angle));
+```
+
+Нулевой угол обязан оставлять `rest`, а не identity. Позицию покоя тоже сохраняй и прибавляй смещение к ней.

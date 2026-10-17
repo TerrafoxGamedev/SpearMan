@@ -29,6 +29,7 @@ public partial class InventoryUI : Control
 
 	private InventoryContainer _container;   // Ссылка на логику (зоны, предметы)
     private Texture2D _backpackIcon;         // Изображение рюкзака
+	private ItemPreviewRenderer _preview;
 
 	// === СОСТОЯНИЕ DRAG & DROP ===
 	private ItemInstance _dragging = null;   // Что тащим (null = ничего не тащим)
@@ -50,12 +51,29 @@ public partial class InventoryUI : Control
         public ItemInstance SwapTarget;   // Предмет, с которым можно обменяться (или null)
 	}
 
-    // Владелец инвентаря
-    private Node2D _ownerPlayer;            
-    public void SetOwnerPlayer(Node2D player)
+    Node3D _ownerPlayer;
+
+    public void SetOwnerPlayer(Node3D player)
     {
         _ownerPlayer = player;
     }
+
+	public void SetPreview(ItemPreviewRenderer preview)
+	{
+		_preview = preview;
+	}
+
+	public bool IsDragging => _dragging != null;
+
+	public void CancelDrag()
+	{
+		if (_dragging == null)
+			return;
+		ReturnToSource();
+		_dragging = null;
+		Input.MouseMode = Input.MouseModeEnum.Visible;
+		QueueRedraw();
+	}
 
 	public void Bind(InventoryContainer container, Texture2D backpackIcon = null)
     {
@@ -88,8 +106,8 @@ public partial class InventoryUI : Control
         Vector2 mouseGlobal = GetViewport().GetMousePosition();
         if (GetGlobalRect().HasPoint(mouseGlobal)) return;
 
-        // Клик вне UI — выбрасываем
         ThrowDraggedItemToWorld();
+        GetViewport().SetInputAsHandled();
     }
     
     public override void _GuiInput(InputEvent @event)
@@ -377,34 +395,28 @@ public partial class InventoryUI : Control
 
     public void ThrowDraggedItemToWorld()
     {
-        // TODO: переписать под 3D, когда появится WorldItem3D
-        GD.Print("Throw to world пока не реализовано");
-        if (_dragging == null) return;
+        if (_dragging == null)
+			return;
+
+		Node scene = GetTree().CurrentScene;
+		if (scene == null || _ownerPlayer == null)
+		{
+			CancelDrag();
+			return;
+		}
+
+		var worldItem = new WorldItem
+		{
+			Data = _dragging.Data,
+			Count = _dragging.Count
+		};
+		worldItem.PrepareDrop(_ownerPlayer, GetViewport().GetMousePosition());
+		scene.AddChild(worldItem);
+
         _dragging = null;
         Input.MouseMode = Input.MouseModeEnum.Visible;
         QueueRedraw();
     }
-    /*{
-        if (_dragging == null) return;
-
-        var scene = GD.Load<PackedScene>("res://Scenes/WorldItem.tscn");
-        var worldItem = scene.Instantiate<WorldItem>();
-
-        worldItem.Data = _dragging.Data;
-        worldItem.Count = _dragging.Count;
-
-        // Позиция — рядом с игроком в сторону курсора
-        Vector2 playerPos = _ownerPlayer.GlobalPosition;
-        Vector2 mouseGlobal = GetGlobalMousePosition();
-        Vector2 dir = (mouseGlobal - playerPos).Normalized();
-        worldItem.GlobalPosition = playerPos + dir * 60f;
-
-        GetTree().CurrentScene.AddChild(worldItem);
-
-        _dragging = null;
-        Input.MouseMode = Input.MouseModeEnum.Visible;
-        QueueRedraw();
-    }*/
 
     // ==================== ХЕЛПЕРЫ ====================
 
@@ -630,38 +642,12 @@ public partial class InventoryUI : Control
                 Vector2 itemPos = origin + (Vector2)(item.Position * CellSize);
                 Rect2 itemRect = new(itemPos, (Vector2)(effSize * CellSize));   // Прямоугольник, который занимает предмет
                 
-                // Нейтральные заливка и обводка
                 DrawRect(itemRect, ItemFillColor);
                 DrawRect(itemRect, ItemBorderColor, false, 2);
 
-                // Если у предмета нет иконки — заливаем прямоугольник серым
-                if (item.Data.Icon == null)
-                {
-                    DrawRect(itemRect.Grow(-1), ItemBgColor);
-                    continue;
-                }
-
-                // Натуральный размер текстуры — без масштабирования
-                Vector2 texSize = item.Data.Icon.GetSize();
-
-                // Центр прямоугольника — туда хотим поместить иконку
                 Vector2 center = itemPos + (Vector2)(effSize * CellSize) * 0.5f;
-
-                // Если предмет повёрнут — рисуем с поворотом на 90° вокруг центра
-                if (item.Rotated)
-                {
-                    DrawSetTransform(center, Mathf.Pi / 2, Vector2.One);
-                    DrawTextureRect(item.Data.Icon,
-                        new Rect2(-texSize * 0.5f, texSize), false);
-                    DrawSetTransform(Vector2.Zero, 0, Vector2.One);
-                }
-                else
-                {
-                    // Левый-верхний угол иконки, чтобы она оказалась по центру
-                    Vector2 topLeft = center - texSize * 0.5f;
-                    DrawTextureRect(item.Data.Icon,
-                        new Rect2(topLeft, texSize), false);
-                }
+				if (!DrawItemTexture(item, center, item.Rotated))
+					DrawRect(itemRect.Grow(-1), ItemBgColor);
 
                 if (item.Data.MaxStack > 1)
                     DrawStackLabel(item, itemRect);
@@ -719,26 +705,34 @@ public partial class InventoryUI : Control
         // === ТАЩИМЫЙ ПРЕДМЕТ — рисуем ПОВЕРХ всего в самом конце ===
         if (_dragging != null)
         {
-            Vector2 texSize = _dragging.Data.Icon.GetSize();
-
-            // Позиция левого-верхнего угла иконки на экране
             Vector2 dragTopLeftInCells = _lastMouseLocal / CellSize - _dragOffsetInCells;
             Vector2 center = (dragTopLeftInCells * CellSize)
                              + (Vector2)(_dragging.EffectiveSize * CellSize) * 0.5f;
-
-            if (_dragging.Rotated)
-            {
-                DrawSetTransform(center, Mathf.Pi / 2, Vector2.One);
-                DrawTextureRect(_dragging.Data.Icon,
-                    new Rect2(-texSize * 0.5f, texSize), false);
-                DrawSetTransform(Vector2.Zero, 0, Vector2.One);
-            }
-            else
-            {
-                Vector2 topLeft = center - texSize * 0.5f;
-                DrawTextureRect(_dragging.Data.Icon,
-                    new Rect2(topLeft, texSize), false);
-            }
+			if (!DrawItemTexture(_dragging, center, _dragging.Rotated))
+			{
+				Vector2 size = (Vector2)(_dragging.EffectiveSize * CellSize);
+				DrawRect(new Rect2(center - size * 0.5f, size), ItemBgColor);
+			}
         }
     }
+
+	bool DrawItemTexture(ItemInstance item, Vector2 center, bool rotated)
+	{
+		Texture2D texture = _preview?.Request(item.Data, CellSize);
+		if (texture == null)
+			return false;
+
+		Vector2 drawSize = (Vector2)(item.Data.Size * CellSize);
+		if (rotated)
+		{
+			DrawSetTransform(center, Mathf.Pi / 2f, Vector2.One);
+			DrawTextureRect(texture, new Rect2(-drawSize * 0.5f, drawSize), false);
+			DrawSetTransform(Vector2.Zero, 0f, Vector2.One);
+		}
+		else
+		{
+			DrawTextureRect(texture, new Rect2(center - drawSize * 0.5f, drawSize), false);
+		}
+		return true;
+	}
 }
